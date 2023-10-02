@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name_apk"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lengkapi data untuk melanjutkan"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi User"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:ems="10"
+                android:padding="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/name_user"
+                android:inputType="textEmailAddress"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="clear_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:ems="10"
+                android:padding="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="clear_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:ems="10"
+                android:padding="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/no_telp_whatsapp"
+                android:inputType="number"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="clear_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:ems="10"
+                android:hint="Kata sandi"
+                android:inputType="textPassword"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="password_toggle" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informasi Toko"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:ems="10"
+                android:padding="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="@string/nama_toko"
+                android:inputType="text"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="clear_text"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:ems="10"
+                android:padding="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Domain Toko"
+                android:inputType="text"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="clear_text"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:entries="@array/spinner_items_one"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:entries="@array/spinner_items_two"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:entries="@array/spinner_items_three"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:ems="10"
+                android:padding="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:hint="Alamat lengkap"
+                android:inputType="text"
+                android:textSize="@dimen/_14ssp"
+                app:endIconMode="clear_text"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_box_rectangle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

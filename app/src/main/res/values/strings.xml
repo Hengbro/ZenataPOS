@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Zenenta</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="wordfirstformlogin">Login untuk menlanjutkan</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Masuk</string>
+    <string name="forgetpassword">Lupa password</string>
+    <string name="notaccount">Belum punya akun?</string>
+    <string name="sign_up">Daftar</string>
+    <string name="atau_masuk_dengan">Atau masuk dengan</string>
+    <string name="version">v1.12.9</string>
+    <string name="tips_login">Masuk dengan Kode Akses</string>
+    <string name="name_product">Nama product</string>
+    <string name="stock">10 Stok</string>
+    <string name="price_product">Rp. 10.000</string>
+    <string name="all_product">Semua produk</string>
+    <string name="name_apk">Zenenta POS</string>
+    <string name="name_user">Nama</string>
+    <string name="no_telp_whatsapp">No. Telp (Whatsapp)</string>
+    <string name="nama_toko">Nama Toko</string>
+
+    <string-array name="spinner_items_one">
+        <item> Pilih Provinsi</item>
+    </string-array>
+
+    <string-array name="spinner_items_two">
+        <item> Pilih Kota</item>
+    </string-array>
+
+    <string-array name="spinner_items_three">
+        <item> Pilih Kecamatan</item>
+    </string-array>
+</resources>

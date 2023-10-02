@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/all_product"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/all_product"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_11ssp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_centerVertical="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/get_category"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
+            android:src="@drawable/baseline_keyboard_arrow_down"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/all_product"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_240sdp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@color/gray3" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/baseline_search"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/_32sdp"
+                android:background="@color/gray3" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ProgressBar
+            android:id="@+id/pdTempatRekomend"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerInParent="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tempat_rekomend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            tools:itemCount="6"
+            tools:listitem="@layout/item_toko" />
+
+    </RelativeLayout>
+
+</LinearLayout>
