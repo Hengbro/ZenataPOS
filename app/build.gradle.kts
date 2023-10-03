@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.zenatapos"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.zenatapos"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -56,5 +56,5 @@ dependencies {
     implementation ("com.intuit.ssp:ssp-android:1.1.0")
 
     // myHelper
-    implementation ("com.github.TistoW:MyHelper:2.0.29")
+//    implementation ("com.github.TistoW:MyHelper:2.0.29")
 }
