@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_height"
+        android:padding="@dimen/paddingSmall"
+        android:layout_margin="@dimen/marginNormal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/_3sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_height"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asset_ic_table_management" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/marginNormal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <TextView
+                    android:id="@+id/tv_saran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10 peoduct"
+                    android:textAppearance="@style/textAppearance.Body3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="@dimen/buttonImage"
+            android:layout_height="@dimen/buttonImage"
+            android:src="@drawable/baseline_chevron_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginNormal"
+            android:padding="@dimen/buttonImagePadding"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray3"
+        android:layout_marginEnd="@dimen/marginNormal"
+        android:layout_marginStart="@dimen/marginNormal"/>
+
+</LinearLayout>

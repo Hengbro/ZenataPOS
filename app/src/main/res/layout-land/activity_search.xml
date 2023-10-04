@@ -17,110 +17,9 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/marginMedium">
-
-                    <androidx.appcompat.widget.AppCompatImageButton
-                        android:layout_width="@dimen/buttonImage"
-                        android:layout_height="@dimen/buttonImage"
-                        android:src="@drawable/baseline_dehaze"
-                        android:layout_centerVertical="true"
-                        android:padding="@dimen/buttonImagePadding"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="@dimen/marginExtra"
-                        android:layout_centerVertical="true"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Library"
-                            android:textAppearance="@style/textAppearance.Body2"
-                            android:textColor="@color/natural_900"
-                            android:padding="@dimen/paddingNormal"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Favorites"
-                            android:textAppearance="@style/textAppearance.Body2"
-                            android:textColor="@color/natural_900"
-                            android:padding="@dimen/paddingNormal"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Keypad"
-                            android:textAppearance="@style/textAppearance.Body2"
-                            android:textColor="@color/natural_900"
-                            android:padding="@dimen/paddingNormal"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Tables"
-                            android:textAppearance="@style/textAppearance.Body2"
-                            android:textColor="@color/natural_900"
-                            android:padding="@dimen/paddingNormal"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Bills"
-                            android:textAppearance="@style/textAppearance.Body2"
-                            android:textColor="@color/natural_900"
-                            android:padding="@dimen/paddingNormal"/>
-
-                    </LinearLayout>
-
-                    <androidx.appcompat.widget.AppCompatImageButton
-                        android:layout_width="@dimen/buttonImage"
-                        android:layout_height="@dimen/buttonImage"
-                        android:src="@drawable/baseline_more_vert"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/marginNormal"
-                        android:padding="@dimen/buttonImagePadding"/>
-
-                </RelativeLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/gray5"
-                android:layout_margin="@dimen/marginNormal"
-                android:orientation="horizontal">
-
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/medium_height"
-                    android:text="Moring Menu"
-                    android:backgroundTint="@color/red"
-                    android:textColor="@color/white"
-                    style="@style/Button.Normal" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/medium_height"
-                    android:textColor="@color/red4"
-                    android:backgroundTint="@color/white"
-                    android:text="Evening Menu"
-                    android:layout_marginStart="@dimen/marginNormal"
-                    style="@style/Button.OutlineButton"/>
-
-            </LinearLayout>
+                android:layout_height="@dimen/normal_height"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -145,56 +44,12 @@
                     android:hint="Search for product or categories"
                     android:textColor="@color/natural_900"
                     android:gravity="center_vertical"
-                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textSize="@dimen/textBody1"
                     android:layout_toEndOf="@+id/btn_search"
                     android:background="@color/gray5"
                     app:endIconMode="clear_text" />
 
             </RelativeLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Categories"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:padding="@dimen/paddingNormal"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray3"
-                android:layout_margin="@dimen/marginNormal"/>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ProgressBar
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_100sdp"
-                    android:visibility="gone"
-                    android:layout_centerInParent="true" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-                    tools:itemCount="3"
-                    tools:listitem="@layout/item_categories"/>
-
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Product"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:padding="@dimen/paddingNormal"/>
 
             <View
                 android:layout_width="match_parent"
@@ -228,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:text="Add new product in category"
                 android:textAppearance="@style/textAppearance.Body2"
-                android:textColor="@color/blue_500"
+                android:textColor="@color/blue_800"
                 android:gravity="center_horizontal"/>
 
         </LinearLayout>
