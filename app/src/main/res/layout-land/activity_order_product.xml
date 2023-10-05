@@ -17,13 +17,14 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/normal_height">
+                android:layout_height="@dimen/large_height"
+                android:layout_margin="@dimen/marginNormal">
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/btn_clear"
                     android:layout_width="@dimen/buttonImage"
                     android:layout_height="@dimen/buttonImage"
-                    android:src="@drawable/baseline_clear"
+                    android:src="@drawable/asset_ic_close"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/marginNormal"
                     android:padding="@dimen/buttonImagePadding"/>
@@ -38,14 +39,48 @@
                     android:layout_centerVertical="true"
                     android:textAppearance="@style/textAppearance.Heading4"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_height"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove"
+                        android:textColor="@color/red"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:layout_marginEnd="@dimen/marginMedium"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/medium_height"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        style="@style/Button.Normal" />
+
+                </LinearLayout>
+
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/medium_height"
                     android:text="Add product"
+                    android:enabled="false"
                     android:layout_alignParentEnd="true"
                     style="@style/Button.Normal"/>
 
             </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:orientation="vertical">
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -244,6 +279,9 @@
                     tools:listitem="@layout/item_taxes" />
 
             </RelativeLayout>
+
+        </LinearLayout>
+
 
         </LinearLayout>
 

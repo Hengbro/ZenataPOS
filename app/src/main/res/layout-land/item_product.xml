@@ -74,13 +74,12 @@
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatImageButton
+        <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/buttonImage"
             android:layout_height="@dimen/buttonImage"
-            android:src="@drawable/baseline_more_vert"
+            android:src="@drawable/asset_ic_kebab_menu"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/marginNormal"
             android:padding="@dimen/buttonImagePadding"/>
 
     </RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_height"
+            android:layout_margin="@dimen/marginNormal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Taxes &amp; other charges "
+                android:textAppearance="@style/textAppearance.Heading4"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/normal_height"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textColor="@color/red"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:layout_marginEnd="@dimen/marginMedium"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    style="@style/Button.Normal" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/medium_height"
+                android:text="Save taxes"
+                android:layout_alignParentEnd="true"
+                style="@style/Button.Normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_height"
+                android:text="Reset all taxes"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@color/gray5"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:layout_marginTop="@dimen/marginMedium"
+                android:layout_marginBottom="@dimen/marginMedium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="@dimen/marginNormal"
+                android:background="@color/gray4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_height"
+                android:layout_margin="@dimen/marginMedium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gst (10%)"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textBody1" />
+
+                    <TextView
+                        android:id="@+id/tv_saran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Apply GST to all items"
+                        android:textSize="@dimen/textBody2" />
+
+                </LinearLayout>
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingMedium"
+                    android:layout_alignParentEnd="true"
+                    tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:layout_marginStart="@dimen/marginNormal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

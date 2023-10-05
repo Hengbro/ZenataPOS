@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_height"
+            android:layout_margin="@dimen/marginNormal">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Taxes &amp; other charges "
+                android:textStyle="bold"
+                android:layout_margin="@dimen/marginSmall"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/textAppearance.Heading4"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/normal_height"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textColor="@color/red"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:layout_marginEnd="@dimen/marginMedium"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    style="@style/Button.Normal" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/medium_height"
+                android:text="Save taxes"
+                android:layout_alignParentEnd="true"
+                style="@style/Button.Normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/marginExtra"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 140,000"
+                    android:textAppearance="@style/textAppearance.Heading1"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/marginNormal"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choice a payment method below"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    android:gravity="center_horizontal"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4"
+                    android:layout_marginTop="@dimen/marginExtra"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:padding="@dimen/paddingSmall"
+                android:layout_margin="@dimen/marginSmall">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:padding="@dimen/paddingSmall"
+                android:layout_margin="@dimen/marginSmall">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:padding="@dimen/paddingSmall"
+                android:layout_margin="@dimen/marginSmall">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:padding="@dimen/paddingSmall"
+                android:layout_margin="@dimen/marginSmall">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:padding="@dimen/paddingSmall"
+                android:layout_margin="@dimen/marginSmall">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_right_arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

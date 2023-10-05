@@ -2,8 +2,439 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginMedium">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_dehaze"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/marginExtra"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Library"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/natural_900"
+                            android:padding="@dimen/paddingNormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Favorites"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/natural_900"
+                            android:padding="@dimen/paddingNormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keypad"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/natural_900"
+                            android:padding="@dimen/paddingNormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tables"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/natural_900"
+                            android:padding="@dimen/paddingNormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bills"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/natural_900"
+                            android:padding="@dimen/paddingNormal"/>
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_more_vert"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/marginLarge"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginMedium"
+                android:background="@color/gray5"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:padding="@dimen/paddingNormal"
+                    android:text="Moring Menu"
+                    android:backgroundTint="@color/red"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:textColor="@color/white"
+                    style="@style/Button.Normal" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:padding="@dimen/paddingSmall"
+                    android:textColor="@color/red4"
+                    android:backgroundTint="@color/white"
+                    android:text="Evening Menu"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    style="@style/Button.OutlineButton"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:background="@drawable/bg_input">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_search"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/marginNormal"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asset_ic_search" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/normal_height"
+                    android:layout_marginStart="@dimen/marginBox"
+                    android:hint="Search for product or categories"
+                    android:textColor="@color/natural_900"
+                    android:gravity="center_vertical"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:layout_toEndOf="@+id/btn_search"
+                    android:background="@color/gray5"
+                    app:endIconMode="clear_text" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginMedium"
+                android:layout_marginTop="@dimen/marginNormal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginNormal"
+                    android:text="Categories"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray3"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginNormal">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/medium_height"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/item_categories"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginNormal"
+                    android:text="Product"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray3"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/item_product"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:padding="@dimen/paddingNormal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add new product in category"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/blue_500"
+                    android:gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No products"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:padding="@dimen/paddingNormal"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_more_vert"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/marginNormal"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:background="@color/gray5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Having here"
+                        android:gravity="center"
+                        android:padding="@dimen/paddingNormal"
+                        android:textColor="@color/natural_900"
+                        android:textAppearance="@style/textAppearance.Body2"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingNormal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/image_view"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="centerCrop"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/asset_ic_user" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_3sdp"
+                            android:text="Add costumer"
+                            android:textStyle="bold"
+                            android:layout_marginStart="@dimen/marginNormal"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/textAppearance.Body3" />
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_chevron_right"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/paddingNormal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_gravity="center_vertical"
+                            android:scaleType="centerCrop"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/asset_ic_table_management" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/_3sdp"
+                            android:text="Add a table"
+                            android:textStyle="bold"
+                            android:layout_marginStart="@dimen/marginNormal"
+                            android:textColor="@color/black"
+                            android:textAppearance="@style/textAppearance.Body3"/>
+
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_chevron_right"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_margin="@dimen/marginNormal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/marginMedium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/medium_height"
+                        android:layout_weight="1"
+                        android:text="Save bill"
+                        style="@style/Button.OutlineButton.Primary" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/medium_height"
+                        android:layout_weight="1"
+                        android:text="Save bill"
+                        android:layout_marginStart="@dimen/marginSmall"
+                        style="@style/Button.OutlineButton.Primary"/>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:text="Charge Rp. 0"
+                    style="@style/Button.Normal"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
