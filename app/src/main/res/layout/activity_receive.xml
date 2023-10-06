@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_height"
+            android:layout_margin="@dimen/marginNormal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_user"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:tint="@color/colorPrimary"
+                android:padding="@dimen/buttonImagePadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Add cutomer"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/marginSmall"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/textAppearance.Heading4"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/normal_height"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New sale"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="@style/textAppearance.Heading4"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_right_alternate_arrow"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/marginNormal"
+                    android:tint="@color/colorPrimary"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/medium_height"
+                android:text="Save taxes"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                style="@style/Button.Normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/_380sdp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/marginExtra"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp. 16,000"
+                android:textAppearance="@style/textAppearance.Heading1"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/marginNormal"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Out of Rp. 17,000"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:gravity="center_horizontal"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How would you like to receive you receipt"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/marginExtra"
+                android:textAppearance="@style/textAppearance.Body1"
+                android:gravity="center"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="@dimen/medium_height"
+                    android:text="Enter email"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:padding="@dimen/paddingNormal"
+                    android:background="@drawable/bg_input"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/medium_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_email"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/marginLarge"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Send by email"
+                        android:layout_marginEnd="@dimen/marginLarge"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="@dimen/medium_height"
+                    android:text="Enter whatsapp"
+                    android:gravity="center_vertical"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:padding="@dimen/paddingNormal"
+                    android:background="@drawable/bg_input"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/medium_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_input"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:src="@drawable/baseline_email"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/marginLarge"
+                        android:padding="@dimen/buttonImagePadding"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Send by whatsapp"
+                        android:layout_marginEnd="@dimen/marginLarge"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.OutlineButton.Primary"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/marginExtra"
+                android:text="Print receipt"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
