@@ -110,6 +110,7 @@
                 android:text="How would you like to receive you receipt"
                 android:textStyle="bold"
                 android:layout_marginTop="@dimen/marginExtra"
+                android:layout_marginBottom="@dimen/marginMedium"
                 android:textAppearance="@style/textAppearance.Body1"
                 android:gravity="center"/>
 
