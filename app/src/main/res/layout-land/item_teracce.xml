@@ -3,25 +3,35 @@
     android:id="@+id/layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_input"
-        android:layout_marginEnd="@dimen/marginNormal"
-        android:layout_marginTop="@dimen/marginNormal"
-        android:layout_marginBottom="@dimen/marginNormal"
-        android:backgroundTint="@color/gray5">
+        android:layout_margin="@dimen/marginNormal">
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Teracce 1"
-            android:textStyle="bold"
-            android:layout_margin="@dimen/marginExtra"
-            android:textAppearance="@style/textAppearance.Body3"/>
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/marginSmall"
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:layout_marginTop="@dimen/marginExtra"
+            android:layout_marginBottom="@dimen/marginLarge">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terrace 1"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/textAppearance.Body2"/>
+
+
+        </LinearLayout>
 
     </RelativeLayout>
 

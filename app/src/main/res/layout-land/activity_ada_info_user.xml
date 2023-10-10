@@ -169,12 +169,29 @@
             android:background="@color/gray4"
             android:layout_margin="@dimen/marginMedium"/>
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="No customer label"
+            android:layout_gravity="center_vertical"
             android:layout_marginStart="@dimen/marginExtra"
-            android:textAppearance="@style/textAppearance.Body3"/>
+            android:layout_marginEnd="@dimen/marginExtra">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No customer label"
+                android:layout_centerVertical="true"
+                android:textAppearance="@style/textAppearance.Body3"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_right_arrow"
+                android:padding="@dimen/buttonImagePadding"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
 
         <View
             android:layout_width="match_parent"

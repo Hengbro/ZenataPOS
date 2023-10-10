@@ -28,12 +28,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toEndOf="@+id/btn_clear"
-                android:text="Taxes &amp; other charges "
-                android:textStyle="bold"
-                android:layout_margin="@dimen/marginSmall"
                 android:layout_centerVertical="true"
-                android:textAppearance="@style/textAppearance.Heading4"/>
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Select table"
+                android:textAppearance="@style/textAppearance.Heading4"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -106,7 +109,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/paddingLarge"
+                android:padding="@dimen/paddingBox"
+                android:layout_marginTop="@dimen/marginLarge"
                 android:orientation="vertical">
 
                 <TextView
@@ -114,12 +118,13 @@
                     android:layout_height="wrap_content"
                     android:text="Dining hall"
                     android:textStyle="bold"
+                    android:layout_marginStart="@dimen/marginExtra"
                     android:textAppearance="@style/textAppearance.Body1"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
+                    android:layout_marginStart="@dimen/marginLarge"
                     android:layout_marginBottom="@dimen/marginNormal">
 
                     <ProgressBar
@@ -144,11 +149,13 @@
                     android:layout_height="wrap_content"
                     android:text="Terrace"
                     android:textStyle="bold"
+                    android:layout_marginStart="@dimen/marginExtra"
                     android:textAppearance="@style/textAppearance.Body1"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginLarge"
                     android:layout_marginBottom="@dimen/marginNormal">
 
                     <ProgressBar

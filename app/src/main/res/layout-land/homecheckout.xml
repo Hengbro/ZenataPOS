@@ -29,7 +29,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/marginMedium">
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="@dimen/buttonImage"
                         android:layout_height="@dimen/buttonImage"
                         android:src="@drawable/asset_ic_hamburger_menu"
@@ -80,7 +80,7 @@
                             android:layout_height="wrap_content"
                             android:text="Bills"
                             android:textAppearance="@style/textAppearance.Body2"
-                            android:textColor="@color/natural_900"
+                            android:textColor="@color/colorPrimary"
                             android:padding="@dimen/paddingNormal"/>
 
                     </LinearLayout>
@@ -103,6 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/marginMedium"
                 android:background="@color/gray5"
+                android:visibility="gone"
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
@@ -129,9 +130,10 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/medium_height"
                 android:layout_marginStart="@dimen/marginNormal"
                 android:layout_marginEnd="@dimen/marginNormal"
+                android:visibility="visible"
                 android:background="@drawable/bg_input">
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -158,6 +160,7 @@
                     android:layout_toEndOf="@+id/btn_search"
                     android:layout_marginEnd="@dimen/marginMedium"
                     android:background="@color/gray5"
+                    android:layout_centerVertical="true"
                     app:endIconMode="clear_text" />
 
             </RelativeLayout>
@@ -165,9 +168,133 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:background="@drawable/bg_input"
+                    android:layout_margin="@dimen/marginNormal"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Open bills"
+                        android:enabled="true"
+                        app:backgroundTint="@color/white"
+                        android:layout_marginEnd="@dimen/marginSmall"
+                        android:layout_marginStart="@dimen/marginNormal"
+                        style="@style/Button.TextButton"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Closed bills"
+                        android:enabled="false"
+                        android:layout_marginEnd="@dimen/marginNormal"
+                        android:layout_marginStart="@dimen/marginSmall"
+                        style="@style/Button.TextButton"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginLarge"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:layout_marginEnd="@dimen/marginNormal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1 BILL"
+                        android:textAppearance="@style/textAppearance.Body2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL: Rp. 154,000"
+                        android:layout_alignParentEnd="true"
+                        android:textAppearance="@style/textAppearance.Body2"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/marginNormal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/buttonImage"
+                            android:layout_height="@dimen/buttonImage"
+                            android:src="@drawable/asset_ic_open_bills"
+                            app:tint="@color/white"
+                            android:layout_margin="@dimen/marginSmall"
+                            android:padding="@dimen/buttonImagePadding"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dining hall 1"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_margin="@dimen/marginNormal"
+                            android:textAppearance="@style/textAppearance.Body2" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content"
+                            android:text="1 min ago"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:layout_margin="@dimen/marginNormal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. 154,000"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:layout_margin="@dimen/marginNormal"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/marginMedium"
                 android:layout_marginEnd="@dimen/marginMedium"
                 android:layout_marginTop="@dimen/marginNormal"
+                android:visibility="gone"
                 android:orientation="vertical">
 
                 <TextView
@@ -248,6 +375,77 @@
                     android:textColor="@color/blue_500"
                     android:gravity="center_horizontal"/>
 
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginLarge"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dining hall"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:layout_marginBottom="@dimen/marginNormal">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/medium_height"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        tools:itemCount="10"
+                        app:spanCount="5"
+                        tools:listitem="@layout/item_table"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terrace"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/marginNormal"
+                    android:layout_marginBottom="@dimen/marginNormal">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/medium_height"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        tools:itemCount="4"
+                        app:spanCount="5"
+                        tools:listitem="@layout/item_teracce"/>
+
+                </RelativeLayout>
 
             </LinearLayout>
 
@@ -451,7 +649,7 @@
 
                         <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="@dimen/extra_height"
+                            android:layout_height="wrap_content"
                             android:orientation="horizontal">
 
                             <TextView
@@ -472,6 +670,30 @@
                     </LinearLayout>
 
                 </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/gray5">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="2 saved products"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:layout_margin="@dimen/marginMedium"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 140.000"
+                        android:layout_margin="@dimen/marginMedium"
+                        android:textAppearance="@style/textAppearance.Body2"/>
+
+                </LinearLayout>
 
                 <View
                     android:layout_width="match_parent"
@@ -706,6 +928,57 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone">
 
+        <LinearLayout
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/bg_input"
+            android:layout_margin="@dimen/marginMedium"
+            android:padding="@dimen/paddingNormal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dining hall 1"
+                android:layout_marginTop="@dimen/marginMedium"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 products"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 140.000"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:layout_margin="@dimen/marginNormal"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttonImage"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                android:background="@color/gray5"
+                android:padding="@dimen/buttonImagePadding"
+                android:src="@drawable/asset_ic_close" />
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
