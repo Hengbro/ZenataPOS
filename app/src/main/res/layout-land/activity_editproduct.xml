@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/large_height"
+                android:layout_margin="@dimen/marginNormal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/btn_clear"
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_close"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/marginNormal"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/marginSmall"
+                    android:layout_marginTop="@dimen/marginSmall"
+                    android:layout_marginEnd="@dimen/marginSmall"
+                    android:layout_marginBottom="@dimen/marginSmall"
+                    android:layout_toEndOf="@+id/btn_clear"
+                    android:text="Edit Nama product"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_height"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remove"
+                        android:textColor="@color/red"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:layout_marginEnd="@dimen/marginMedium"
+                        android:textStyle="bold"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/medium_height"
+                        android:text="Save"
+                        android:textColor="@color/white"
+                        style="@style/Button.Normal" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:text="Save changes"
+                    android:enabled="true"
+                    android:layout_alignParentEnd="true"
+                    style="@style/Button.Normal"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginMedium"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional notes"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/marginNormal"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/extra_height"
+                    android:layout_margin="@dimen/paddingNormal"
+                    android:background="@drawable/bg_input">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter additionla notes"
+                        android:textColor="@color/natural_900"
+                        android:textSize="@dimen/textBody1"
+                        android:padding="@dimen/paddingMedium"
+                        android:background="@color/gray5"
+                        app:endIconMode="clear_text" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Taxes &amp; other charges "
+                    android:textSize="@dimen/textHeading4"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/marginNormal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="@dimen/marginNormal"
+                    android:background="@color/gray5" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_100sdp"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                        app:spanCount="2"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/item_taxes" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

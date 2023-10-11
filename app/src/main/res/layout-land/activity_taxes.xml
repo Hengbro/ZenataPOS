@@ -16,7 +16,7 @@
             android:layout_height="@dimen/large_height"
             android:layout_margin="@dimen/marginNormal">
 
-            <androidx.appcompat.widget.AppCompatImageButton
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
                 android:layout_width="@dimen/buttonImage"
                 android:layout_height="@dimen/buttonImage"
