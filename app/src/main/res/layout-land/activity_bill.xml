@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginNormal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Create new bill "
+                android:textAppearance="@style/textAppearance.Body1"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove"
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Split payment"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/large_height"
+                    android:text="Save bill"
+                    android:visibility="visible"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    style="@style/Button.Normal" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/large_height"
+                android:text="Save taxes"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                style="@style/Button.Normal"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginLarge"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bill name"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/marginNormal"
+                android:textAppearance="@style/textAppearance.Body2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter bill name"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:background="@drawable/bg_input"
+                android:layout_margin="@dimen/marginNormal"
+                android:padding="@dimen/paddingMedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Additional notes"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/marginNormal"
+                android:textAppearance="@style/textAppearance.Body2"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter additional notes"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:layout_margin="@dimen/marginNormal"
+                android:background="@drawable/bg_input"
+                android:padding="@dimen/paddingMedium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
