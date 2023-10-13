@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_height"
+            android:layout_margin="@dimen/marginNormal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Split payment by amount"
+                android:textAppearance="@style/textAppearance.Heading4"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:layout_margin="@dimen/marginSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:layout_margin="@dimen/marginExtra"
+            android:backgroundTint="@color/gray3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_info"
+                app:tint="@color/white"
+                android:layout_margin="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 160,000 out of Rp 165,000 will remain after this payment"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment amount"
+            android:textStyle="bold"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:layout_marginBottom="@dimen/marginNormal"
+            android:layout_marginStart="@dimen/marginExtra"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:text="Rp. 000,000"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:padding="@dimen/paddingMedium"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split into equal payments"
+            android:textStyle="bold"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:layout_marginTop="@dimen/marginExtra"
+            android:layout_marginBottom="@dimen/marginNormal"
+            android:layout_marginStart="@dimen/marginExtra"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/marginExtra"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginEnd="@dimen/marginNormal"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginEnd="@dimen/marginNormal"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginEnd="@dimen/marginNormal"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:padding="@dimen/paddingNormal"
+                android:layout_marginEnd="@dimen/marginNormal"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Custom"
+                android:background="@drawable/bg_input"
+                android:gravity="center"
+                android:padding="@dimen/paddingNormal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
