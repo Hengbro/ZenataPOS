@@ -18,15 +18,16 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/large_height"
-                android:layout_margin="@dimen/marginNormal">
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:layout_marginBottom="@dimen/marginNormal">
 
-                <androidx.appcompat.widget.AppCompatImageButton
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/btn_clear"
                     android:layout_width="@dimen/buttonImage"
                     android:layout_height="@dimen/buttonImage"
                     android:src="@drawable/asset_ic_close"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/marginNormal"
                     android:padding="@dimen/buttonImagePadding"/>
 
                 <TextView
@@ -37,7 +38,7 @@
                     android:textStyle="bold"
                     android:layout_margin="@dimen/marginSmall"
                     android:layout_centerVertical="true"
-                    android:textAppearance="@style/textAppearance.Heading4"/>
+                    android:textAppearance="@style/textAppearance.Body2.Bold"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -78,24 +79,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/marginMedium"
-            android:layout_marginEnd="@dimen/marginMedium"
+            android:layout_marginEnd="@dimen/marginNormal"
             android:orientation="vertical">
-
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Choose varition"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:layout_marginTop="@dimen/marginMedium"
                 android:layout_marginStart="@dimen/marginNormal"/>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray3"
-                android:layout_margin="@dimen/marginNormal"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -122,15 +115,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Topings"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold"
-                android:layout_margin="@dimen/marginNormal"/>
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginTop="@dimen/marginLarge"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_margin="@dimen/marginNormal"
-                android:background="@color/gray3" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -157,16 +145,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Quantity"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold"
-                android:layout_margin="@dimen/marginNormal"/>
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginTop="@dimen/marginLarge"/>
 
             <com.google.android.material.card.MaterialCardView
                 android:padding="@dimen/paddingMedium"
                 app:cardCornerRadius="@dimen/cornerRadiusSmall"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/normal_height"
-                android:layout_margin="@dimen/marginSmall"
+                android:layout_margin="@dimen/marginNormal"
                 app:cardElevation="@dimen/_4sdp">
 
                 <RelativeLayout
@@ -181,8 +169,7 @@
                         android:layout_marginTop="@dimen/marginNormal"
                         android:layout_marginEnd="@dimen/marginNormal"
                         android:layout_marginBottom="@dimen/marginNormal"
-                        android:tint="@color/red3"
-                        android:src="@drawable/baseline_horizontal_rule" />
+                        android:tint="@color/red3"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -194,7 +181,7 @@
                         <View
                             android:layout_width="0.5dp"
                             android:layout_height="wrap_content"
-                            android:background="@color/gray3"/>
+                            android:background="@color/gray5"/>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -208,7 +195,7 @@
                         <View
                             android:layout_width="0.5dp"
                             android:layout_height="wrap_content"
-                            android:background="@color/gray3"/>
+                            android:background="@color/gray5"/>
 
                     </LinearLayout>
 
@@ -227,50 +214,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Additional notes"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
                 android:layout_margin="@dimen/marginNormal"/>
 
-            <RelativeLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/paddingNormal"
                 android:background="@drawable/bg_input">
 
-                <EditText
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:gravity="start"
+                    android:hint="Enter costumer full name"
+                    android:paddingVertical="@dimen/paddingSmall"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:paddingEnd="@dimen/paddingNormal"
                     android:inputType="textMultiLine"
                     android:minLines="2"
                     android:maxLines="4"
-                    android:gravity="start"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter additionla notes"
-                    android:text="a shjgka jshdkjshd kjashdk jashdkl ashdkljashjld kjaslkjas kldjaskld jaskldj askl jlakdj ljkasdj lkasjd lkasj asjklj laskdj laskh jkasdhkasjdh kjasgh kasjdh lasdh kjashd lkashd klasdh laslaksd jlaksdj lkasjlkasjd laskdj lkajdla ksjd lkasjd lakjd laksjd laksjdlkasjdas lkjdaskldj lla jdlkaj lkasjlkasjd laskdj aslj la jsldkasj dlkasjd lkajsdlk asjlkjaskld jaslkd jaslk jaskld jaskld jlaskdj aslkd jaslkdj asl kd jaskld jasllak sjlkasjd lkasjd lkasjdlk asjdlkasjd lkasjd laksjd lasdklasjd klasjd laksjdklas jlask jdlkasdj laskj allk ajsdlkasjldkjaskldjaskldj alskj"
-                    android:textColor="@color/natural_900"
-                    android:textSize="@dimen/textBody1"
-                    android:padding="@dimen/paddingMedium"
-                    android:background="@color/gray5"
-                    app:endIconMode="clear_text" />
+                    android:textAppearance="@style/textAppearance.Body3"
+                    android:textColor="@color/natural_900" />
 
-            </RelativeLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Taxes &amp; other charges "
-                android:textSize="@dimen/textHeading4"
-                android:textStyle="bold"
-                android:layout_margin="@dimen/marginNormal" />
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginTop="@dimen/marginLarge" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_margin="@dimen/marginNormal"
-                android:background="@color/gray3" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/marginMedium">
 
                 <ProgressBar
                     android:layout_width="wrap_content"
@@ -290,7 +272,6 @@
             </RelativeLayout>
 
         </LinearLayout>
-
 
         </LinearLayout>
 
