@@ -73,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginExtra"
-        android:visibility="gone"
+        android:visibility="visible"
         android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
@@ -86,7 +86,7 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/asset_ic_manage_customers"
+                android:src="@drawable/asset_ic_user"
                 app:tint="@color/colorPrimary"
                 android:padding="@dimen/paddingNormal"/>
 

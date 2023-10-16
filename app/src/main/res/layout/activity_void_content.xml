@@ -1,203 +1,316 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="40dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/wordfirstformlogin"
-            android:textStyle="bold"
-            android:textSize="@dimen/_13ssp"
-            android:textColor="@color/black"
-            android:gravity="center" />
+            android:layout_height="@dimen/large_height"
+            android:layout_margin="@dimen/marginNormal">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Permudah hidup dengan teknologi"
-            android:textSize="@dimen/_10ssp"
-            android:gravity="center"
-            android:padding="5dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/_30sdp"
-            android:orientation="vertical">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:ems="10"
-                android:drawableStart="@drawable/baseline_email"
-                android:padding="@dimen/_10sdp"
-                android:drawablePadding="@dimen/_10sdp"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:textSize="@dimen/_14ssp"
-                app:endIconMode="clear_text"
-                android:background="@drawable/bg_input"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:background="@drawable/bg_input"
-                android:drawableStart="@drawable/baseline_lock"
-                android:drawablePadding="@dimen/_10sdp"
-                android:ems="10"
-                android:hint="@string/password"
-                android:inputType="textEmailAddress"
-                android:padding="@dimen/_10sdp"
-                android:textSize="@dimen/_14ssp"
-                app:endIconMode="password_toggle" />
-
-
-            <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/bg_box_rectangle">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/login"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Void Martabak Manis x2"
+                android:textAppearance="@style/textAppearance.Heading4"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Void"
                 android:textColor="@color/white"
-                android:layout_centerInParent="true"/>
+                android:textAppearance="@style/textAppearance.Body2"
+                android:layout_margin="@dimen/marginSmall"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forgetpassword"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_gravity="center_horizontal"/>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:padding="@dimen/_5sdp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/notaccount"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_up"
-                android:textStyle="bold"
-                android:textColor="@color/akandimulai"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_gravity="center_horizontal"/>
-
-        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:background="@drawable/bg_input"
+            android:layout_margin="@dimen/marginExtra"
+            android:backgroundTint="@color/gray3"
+            android:orientation="horizontal">
 
-            <View
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="1.5dp"
-                android:layout_gravity="center_vertical"
-                android:background="@color/gray1" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_info"
+                app:tint="@color/white"
+                android:layout_margin="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/atau_masuk_dengan"
-                android:textSize="@dimen/_10ssp"
-                android:gravity="center"
-                android:padding="@dimen/_5sdp" />
-
-            <View
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="1.5dp"
-                android:layout_gravity="center_vertical"
-                android:background="@color/gray1" />
+                android:text="Voiding the product will mark it as free in the bill"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"/>
 
         </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_box_rectangle_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select reason for void"
+            android:textStyle="bold"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:layout_marginBottom="@dimen/marginNormal"
+            android:layout_marginStart="@dimen/marginExtra"/>
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icons_google"
-                    android:layout_margin="@dimen/_10sdp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Google"
-                    android:textSize="@dimen/_14ssp"
-                    android:layout_marginStart="@dimen/_50sdp"
-                    android:layout_gravity="center_vertical"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra">
 
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:padding="@dimen/_5sdp">
+                android:text="Entri error"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:textAppearance="@style/textAppearance.Body2"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tips_login"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal"/>
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kasir"
-                    android:textStyle="bold"
-                    android:textColor="@color/akandimulai"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:layout_gravity="center_horizontal"/>
+        </RelativeLayout>
 
-            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item no longger available"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:textAppearance="@style/textAppearance.Body2"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cotumer change mind"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:textAppearance="@style/textAppearance.Body2"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restock options"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/marginLarge"
+                android:layout_marginBottom="@dimen/marginNormal"
+                android:layout_marginStart="@dimen/marginExtra"
+                android:textAppearance="@style/textAppearance.Body2" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_info"
+                android:layout_marginTop="@dimen/marginMedium"
+                android:padding="@dimen/buttonImagePadding"/>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray3"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra"
+            android:layout_marginBottom="@dimen/marginNormal">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/medium_height"
+                android:visibility="gone"
+                android:layout_centerInParent="true" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_restock"/>
+
+        </RelativeLayout>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="@dimen/_250sdp"
         android:layout_height="wrap_content"
-        android:text="@string/version"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"/>
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@drawable/bg_input"
+        android:backgroundTint="@color/white"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restock optoins"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:textAppearance="@style/textAppearance.Body1"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If prodocts have not been made, you can choose to"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/marginNormal"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/textAppearance.Body2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="restock the inventory or ingredients. Otherview,"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/textAppearance.Body2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="inventory or ingredients will be deducted"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/marginNormal"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/textAppearance.Body2"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray5"
+            android:layout_marginTop="@dimen/marginMedium"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok, got it"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:layout_margin="@dimen/marginMedium"/>
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:src="@drawable/asset_ic_close"
+            android:padding="@dimen/_7sdp"
+            android:background="@color/gray5"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

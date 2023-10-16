@@ -120,7 +120,7 @@
                 android:layout_height="@dimen/large_height"
                 android:orientation="horizontal">
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatTextView
                     android:layout_width="0dp"
                     android:layout_weight="2"
                     android:layout_height="@dimen/medium_height"
@@ -131,33 +131,38 @@
                     android:background="@drawable/bg_input"
                     android:textAppearance="@style/textAppearance.Body2"/>
 
-                <LinearLayout
+                <com.google.android.material.card.MaterialCardView
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/medium_height"
-                    android:layout_weight="1"
-                    android:background="@drawable/bg_input"
                     android:backgroundTint="@color/colorPrimary"
-                    android:layout_margin="@dimen/marginSmall"
-                    android:orientation="horizontal">
+                    android:layout_height="@dimen/medium_height"
+                    android:layout_weight="1">
 
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="@dimen/buttonImage"
-                        android:layout_height="@dimen/buttonImage"
-                        android:src="@drawable/asset_ic_mail"
-                        android:layout_gravity="center_vertical"
-                        android:layout_marginStart="@dimen/marginLarge"
-                        android:padding="@dimen/buttonImagePadding"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="Send by email"
-                        android:layout_marginEnd="@dimen/marginLarge"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:textColor="@color/white"/>
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/buttonImage"
+                            android:layout_height="@dimen/buttonImage"
+                            android:src="@drawable/asset_ic_mail"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/marginLarge"
+                            android:padding="@dimen/buttonImagePadding"/>
 
-                </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="Send by email"
+                            android:layout_marginEnd="@dimen/marginLarge"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
 
             </LinearLayout>
 

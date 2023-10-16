@@ -31,8 +31,8 @@
 
     <dimen name="cornerRadiusSmallHigh">@dimen/_10sdp</dimen>
     <dimen name="cornerRadiusSmall">@dimen/_2sdp</dimen>
-    <dimen name="cornerRadiusNormal">@dimen/_3sdp</dimen>
-    <dimen name="cornerRadiusMedium">@dimen/_4sdp</dimen>
+    <dimen name="cornerRadiusNormal">@dimen/_4sdp</dimen>
+    <dimen name="cornerRadiusMedium">@dimen/_5sdp</dimen>
     <dimen name="cornerRadiusLarge">@dimen/_7sdp</dimen>
 
     <dimen name="marginTiny">@dimen/_1sdp</dimen>

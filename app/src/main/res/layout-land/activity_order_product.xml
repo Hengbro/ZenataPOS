@@ -177,7 +177,11 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="@dimen/_18sdp"
                         android:layout_height="@dimen/_18sdp"
-                        android:layout_margin="@dimen/marginNormal"
+                        android:layout_marginStart="@dimen/marginNormal"
+                        android:layout_marginTop="@dimen/marginNormal"
+                        android:layout_marginEnd="@dimen/marginNormal"
+                        android:layout_marginBottom="@dimen/marginNormal"
+                        android:tint="@color/red3"
                         android:src="@drawable/baseline_horizontal_rule" />
 
                     <LinearLayout
@@ -229,14 +233,19 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/extra_height"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/paddingNormal"
                 android:background="@drawable/bg_input">
 
                 <EditText
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:maxLines="4"
+                    android:gravity="start"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter additionla notes"
+                    android:text="a shjgka jshdkjshd kjashdk jashdkl ashdkljashjld kjaslkjas kldjaskld jaskldj askl jlakdj ljkasdj lkasjd lkasj asjklj laskdj laskh jkasdhkasjdh kjasgh kasjdh lasdh kjashd lkashd klasdh laslaksd jlaksdj lkasjlkasjd laskdj lkajdla ksjd lkasjd lakjd laksjd laksjdlkasjdas lkjdaskldj lla jdlkaj lkasjlkasjd laskdj aslj la jsldkasj dlkasjd lkajsdlk asjlkjaskld jaslkd jaslk jaskld jaskld jlaskdj aslkd jaslkdj asl kd jaskld jasllak sjlkasjd lkasjd lkasjdlk asjdlkasjd lkasjd laksjd lasdklasjd klasjd laksjdklas jlask jdlkasdj laskj allk ajsdlkasjldkjaskldjaskldj alskj"
                     android:textColor="@color/natural_900"
                     android:textSize="@dimen/textBody1"
                     android:padding="@dimen/paddingMedium"

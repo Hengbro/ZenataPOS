@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ZenataPOS"
+rootProject.name = "TutorialPOS"
 include(":app")
  

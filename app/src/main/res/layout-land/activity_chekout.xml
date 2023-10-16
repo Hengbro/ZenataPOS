@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/white">
 
     <LinearLayout
@@ -20,20 +20,20 @@
                 android:id="@+id/btn_clear"
                 android:layout_width="@dimen/buttonImage"
                 android:layout_height="@dimen/buttonImage"
-                android:src="@drawable/asset_ic_close"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/marginNormal"
-                android:padding="@dimen/buttonImagePadding"/>
+                android:padding="@dimen/buttonImagePadding"
+                android:src="@drawable/asset_ic_close" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Taxes &amp; other charges "
-                android:textStyle="bold"
-                android:layout_margin="@dimen/marginSmall"
-                android:layout_centerVertical="true"
-                android:textAppearance="@style/textAppearance.Heading4"/>
+                android:textAppearance="@style/textAppearance.Heading4"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -45,46 +45,46 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Remove"
-                    android:textColor="@color/red"
-                    android:visibility="gone"
-                    android:textAppearance="@style/textAppearance.Body2"
                     android:layout_margin="@dimen/marginSmall"
-                    android:textStyle="bold"/>
+                    android:text="Remove"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Split payment"
-                    android:textColor="@color/colorPrimary"
-                    android:textAppearance="@style/textAppearance.Body2"
                     android:layout_margin="@dimen/marginSmall"
-                    android:textStyle="bold"/>
+                    android:text="Split payment"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
 
                 <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/medium_height"
                     android:text="Save"
-                    android:visibility="gone"
                     android:textColor="@color/white"
-                    style="@style/Button.Normal" />
+                    android:visibility="gone" />
 
             </LinearLayout>
 
             <com.google.android.material.button.MaterialButton
+                style="@style/Button.Normal"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/medium_height"
-                android:text="Save taxes"
-                android:visibility="gone"
                 android:layout_alignParentEnd="true"
-                style="@style/Button.Normal"/>
+                android:text="Save taxes"
+                android:visibility="gone" />
 
         </RelativeLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/gray4"/>
+            android:background="@color/gray4" />
 
         <LinearLayout
             android:layout_width="@dimen/_350sdp"
@@ -93,43 +93,43 @@
             android:layout_margin="@dimen/marginExtra"
             android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rp. 154,000"
-                    android:textAppearance="@style/textAppearance.Heading1"
-                    android:layout_gravity="center"
-                    android:layout_margin="@dimen/marginNormal"
-                    android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/marginNormal"
+                android:text="Rp. 154,000"
+                android:textAppearance="@style/textAppearance.Heading1"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Choice a payment method below"
-                    android:textAppearance="@style/textAppearance.Body3"
-                    android:gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Choice a payment method below"
+                android:textAppearance="@style/textAppearance.Body3" />
 
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/gray4"
-                    android:layout_marginTop="@dimen/marginExtra"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/marginExtra"
+                android:background="@color/gray4" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/medium_height"
-                android:padding="@dimen/paddingSmall"
-                android:layout_margin="@dimen/marginSmall">
+                android:layout_margin="@dimen/marginSmall"
+                android:padding="@dimen/paddingSmall">
 
                 <TextView
                     android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cash"
                     android:layout_centerVertical="true"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/textAppearance.Body2"/>
+                    android:text="Cash"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -144,8 +144,8 @@
                         android:layout_margin="@dimen/marginNormal"
                         android:text="Rp. 154,000"
                         android:textAppearance="@style/textAppearance.Body2"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"/>
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -153,8 +153,8 @@
                         android:layout_margin="@dimen/marginNormal"
                         android:text="Rp. 160,000"
                         android:textAppearance="@style/textAppearance.Body2"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"/>
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -162,8 +162,8 @@
                         android:layout_margin="@dimen/marginNormal"
                         android:text="Rp. 200,000"
                         android:textAppearance="@style/textAppearance.Body2"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"/>
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -171,104 +171,120 @@
                         android:layout_margin="@dimen/marginNormal"
                         android:text="Custom"
                         android:textAppearance="@style/textAppearance.Body2"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorPrimary"/>
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
             </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/gray4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Button.Normal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:padding="@dimen/marginNormal"
+                android:text="QRIS E-wallet"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textStyle="bold"
+                app:iconTint="@color/gray3"
+                app:iconGravity="end"
+                app:iconSize="@dimen/imageNormal"
+                app:icon="@drawable/asset_ic_right_arrow"
+                android:textColor="@color/dark" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/medium_height"
-                android:padding="@dimen/paddingSmall"
-                android:layout_margin="@dimen/marginSmall">
+                android:layout_margin="@dimen/marginSmall"
+                android:padding="@dimen/paddingSmall">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:text="QRIS E-wallet"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/textAppearance.Body2"/>
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="@dimen/buttonImage"
                     android:layout_height="@dimen/buttonImage"
-                    android:src="@drawable/asset_ic_right_arrow"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"/>
+                    android:padding="@dimen/buttonImagePadding"
+                    android:src="@drawable/asset_ic_right_arrow" />
 
             </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/gray4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/medium_height"
-                android:padding="@dimen/paddingSmall"
-                android:layout_margin="@dimen/marginSmall">
+                android:layout_margin="@dimen/marginSmall"
+                android:padding="@dimen/paddingSmall">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:text="Debit / Credit Card"
-                    android:layout_centerVertical="true"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/textAppearance.Body2"/>
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="@dimen/buttonImage"
                     android:layout_height="@dimen/buttonImage"
-                    android:src="@drawable/asset_ic_right_arrow"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"/>
+                    android:padding="@dimen/buttonImagePadding"
+                    android:src="@drawable/asset_ic_right_arrow" />
 
             </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/gray4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/medium_height"
-                android:padding="@dimen/paddingSmall"
-                android:layout_margin="@dimen/marginSmall">
+                android:layout_margin="@dimen/marginSmall"
+                android:padding="@dimen/paddingSmall">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bank Transfer"
                     android:layout_centerVertical="true"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/textAppearance.Body2"/>
+                    android:text="Bank Transfer"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="@dimen/buttonImage"
                     android:layout_height="@dimen/buttonImage"
-                    android:src="@drawable/asset_ic_right_arrow"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"/>
+                    android:padding="@dimen/buttonImagePadding"
+                    android:src="@drawable/asset_ic_right_arrow" />
 
             </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/gray4"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4" />
 
         </LinearLayout>
 

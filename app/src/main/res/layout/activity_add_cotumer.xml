@@ -2,202 +2,119 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingTop="40dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/wordfirstformlogin"
-            android:textStyle="bold"
-            android:textSize="@dimen/_13ssp"
-            android:textColor="@color/black"
-            android:gravity="center" />
+            android:layout_height="@dimen/large_height"
+            android:layout_margin="@dimen/marginNormal">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Permudah hidup dengan teknologi"
-            android:textSize="@dimen/_10ssp"
-            android:gravity="center"
-            android:padding="5dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/_30sdp"
-            android:orientation="vertical">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:ems="10"
-                android:drawableStart="@drawable/baseline_email"
-                android:padding="@dimen/_10sdp"
-                android:drawablePadding="@dimen/_10sdp"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:textSize="@dimen/_14ssp"
-                app:endIconMode="clear_text"
-                android:background="@drawable/bg_input"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_40sdp"
-                android:background="@drawable/bg_input"
-                android:drawableStart="@drawable/baseline_lock"
-                android:drawablePadding="@dimen/_10sdp"
-                android:ems="10"
-                android:hint="@string/password"
-                android:inputType="textEmailAddress"
-                android:padding="@dimen/_10sdp"
-                android:textSize="@dimen/_14ssp"
-                app:endIconMode="password_toggle" />
-
-
-            <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/bg_box_rectangle">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"
+                android:src="@drawable/asset_ic_close" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/login"
-                android:textColor="@color/white"
-                android:layout_centerInParent="true"/>
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Add costumer to size"
+                android:textAppearance="@style/textAppearance.Heading4"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/marginSmall"
+                android:text="Add new costumer"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
 
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/forgetpassword"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_gravity="center_horizontal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal"
-            android:padding="@dimen/_5sdp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/notaccount"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/sign_up"
-                android:textStyle="bold"
-                android:textColor="@color/akandimulai"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_gravity="center_horizontal"/>
-
-        </LinearLayout>
-
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal">
+            android:layout_marginStart="@dimen/marginMedium"
+            android:layout_marginTop="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:background="@drawable/bg_input">
 
-            <View
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="1.5dp"
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_search"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:background="@color/gray1" />
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginTop="@dimen/marginNormal"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:layout_marginBottom="@dimen/marginNormal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/asset_ic_search" />
 
-            <TextView
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/normal_height"
+                android:layout_marginStart="@dimen/marginBox"
+                android:layout_marginEnd="@dimen/marginMedium"
+                android:layout_toEndOf="@+id/btn_search"
+                android:background="@color/gray5"
+                android:gravity="center_vertical"
+                android:hint="Enter costumer name, phone or email"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/natural_900"
+                app:endIconMode="clear_text" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginMedium">
+
+            <ProgressBar
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/atau_masuk_dengan"
-                android:textSize="@dimen/_10ssp"
-                android:gravity="center"
-                android:padding="@dimen/_5sdp" />
+                android:layout_height="@dimen/medium_height"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
 
-            <View
-                android:layout_width="@dimen/_80sdp"
-                android:layout_height="1.5dp"
-                android:layout_gravity="center_vertical"
-                android:background="@color/gray1" />
-
-        </LinearLayout>
-
-            <LinearLayout
+            <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:background="@drawable/bg_box_rectangle_white">
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                tools:itemCount="3"
+                tools:listitem="@layout/item_cotumer" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icons_google"
-                    android:layout_margin="@dimen/_10sdp"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Google"
-                    android:textSize="@dimen/_14ssp"
-                    android:layout_marginStart="@dimen/_50sdp"
-                    android:layout_gravity="center_vertical"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:padding="@dimen/_5sdp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tips_login"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Kasir"
-                    android:textStyle="bold"
-                    android:textColor="@color/akandimulai"
-                    android:layout_marginStart="@dimen/_5sdp"
-                    android:layout_gravity="center_horizontal"/>
-
-            </LinearLayout>
-
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/version"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

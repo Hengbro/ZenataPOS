@@ -22,6 +22,7 @@
     <string name="name_user">Nama</string>
     <string name="no_telp_whatsapp">No. Telp (Whatsapp)</string>
     <string name="nama_toko">Nama Toko</string>
+    <string name="cari">Cari</string>
 
     <string-array name="spinner_items_one">
         <item> Pilih Provinsi</item>

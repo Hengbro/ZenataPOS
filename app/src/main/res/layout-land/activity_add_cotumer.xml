@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@color/white">
 
     <LinearLayout
@@ -20,10 +20,10 @@
                 android:id="@+id/btn_clear"
                 android:layout_width="@dimen/buttonImage"
                 android:layout_height="@dimen/buttonImage"
-                android:src="@drawable/asset_ic_close"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/marginNormal"
-                android:padding="@dimen/buttonImagePadding"/>
+                android:padding="@dimen/buttonImagePadding"
+                android:src="@drawable/asset_ic_close" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,17 +39,16 @@
                 android:textStyle="bold" />
 
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add new costumer"
-                    android:textColor="@color/colorPrimary"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:layout_margin="@dimen/marginSmall"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/marginSmall"
+                android:text="Add new costumer"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
 
 
         </RelativeLayout>
@@ -57,14 +56,14 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
-            android:background="@color/gray4"/>
+            android:background="@color/gray4" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/marginMedium"
-            android:layout_marginEnd="@dimen/marginMedium"
             android:layout_marginTop="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginMedium"
             android:background="@drawable/bg_input">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -73,7 +72,10 @@
                 android:layout_height="@dimen/_10sdp"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:layout_margin="@dimen/marginNormal"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_marginTop="@dimen/marginNormal"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:layout_marginBottom="@dimen/marginNormal"
                 android:scaleType="centerCrop"
                 android:src="@drawable/asset_ic_search" />
 
@@ -81,13 +83,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/normal_height"
                 android:layout_marginStart="@dimen/marginBox"
-                android:hint="Enter costumer name, phone or email"
-                android:textColor="@color/natural_900"
-                android:gravity="center_vertical"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:layout_toEndOf="@+id/btn_search"
                 android:layout_marginEnd="@dimen/marginMedium"
+                android:layout_toEndOf="@+id/btn_search"
                 android:background="@color/gray5"
+                android:gravity="center_vertical"
+                android:hint="Enter costumer name, phone or email"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/natural_900"
                 app:endIconMode="clear_text" />
 
         </RelativeLayout>
@@ -100,8 +102,8 @@
             <ProgressBar
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/medium_height"
-                android:visibility="gone"
-                android:layout_centerInParent="true" />
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
@@ -109,7 +111,7 @@
                 android:orientation="vertical"
                 app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
                 tools:itemCount="3"
-                tools:listitem="@layout/item_cotumer"/>
+                tools:listitem="@layout/item_cotumer" />
 
         </RelativeLayout>
 
