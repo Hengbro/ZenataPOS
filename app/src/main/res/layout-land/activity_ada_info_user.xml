@@ -92,17 +92,6 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginMedium"
-                android:background="@drawable/bg_input"
-                android:gravity="center_vertical"
-                android:hint="Enter costumer full name"
-                android:padding="@dimen/marginNormal"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textColor="@color/natural_900"
-                app:endIconMode="clear_text" />
 
             <TextView
                 android:layout_width="wrap_content"
