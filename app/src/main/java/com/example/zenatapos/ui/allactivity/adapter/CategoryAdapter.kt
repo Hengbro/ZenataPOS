@@ -7,10 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.zenatapos.databinding.ItemCategoriesProductBinding
 import com.example.zenatapos.model.Categories
 @SuppressLint("NotifyDataSetChanged", "SetTextI18n")
-class CategoryAdapter (
-
-    val onClick:(item: Categories)-> Unit):
-    RecyclerView.Adapter<CategoryAdapter.ViewHolder>(){
+class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.ViewHolder>(){
 
     private var data = ArrayList<Categories>()
 
@@ -23,13 +20,11 @@ class CategoryAdapter (
                 tvName.text = item.name
                 tvQty?.text = item.qty+"Product"
 
-                layout.setOnClickListener{
+                /*layout.setOnClickListener{
                     onClick.invoke(item)
-                }
-
+                }*/
             }
         }
-
     }
 
     fun removeAt(index: Int) {
@@ -38,7 +33,7 @@ class CategoryAdapter (
     }
 
     fun addItems(items : List<Categories>){
-        data.clear()
+        //data.clear()
         data.addAll(items)
         notifyDataSetChanged()
     }

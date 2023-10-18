@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -104,25 +103,23 @@
                 android:layout_marginBottom="@dimen/marginMedium"
                 android:background="@color/gray5"
                 android:orientation="horizontal"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <com.google.android.material.button.MaterialButton
                     style="@style/Button.Normal"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/medium_height"
+                    android:layout_height="@dimen/normal_height"
                     android:layout_marginStart="@dimen/marginNormal"
                     android:backgroundTint="@color/red"
-                    android:padding="@dimen/paddingNormal"
                     android:text="Moring Menu"
                     android:textColor="@color/white" />
 
                 <com.google.android.material.button.MaterialButton
                     style="@style/Button.OutlineButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="@dimen/medium_height"
+                    android:layout_height="@dimen/normal_height"
                     android:layout_marginStart="@dimen/marginNormal"
                     android:backgroundTint="@color/white"
-                    android:padding="@dimen/paddingSmall"
                     android:text="Evening Menu"
                     android:textColor="@color/red4" />
 
@@ -295,7 +292,7 @@
                 android:layout_marginTop="@dimen/marginNormal"
                 android:layout_marginEnd="@dimen/marginMedium"
                 android:orientation="vertical"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -664,7 +661,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:visibility="gone">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -1053,6 +1051,7 @@
                     </LinearLayout>
 
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_change"
                         style="@style/Button.Normal"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/normal_height"

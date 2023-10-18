@@ -22,10 +22,10 @@ class InfoUserActivity : AppCompatActivity() {
         _binding = ActivityAdaInfoUserBinding.inflate(layoutInflater)
 
         binding.apply {
-            btnClose!!.setOnClickListener {
+            /*btnClose!!.setOnClickListener {
                 val intent = Intent(this@InfoUserActivity, HomeChekOutActivity::class.java)
                 startActivity(intent)
-            }
+            }*/
         }
 
     }
