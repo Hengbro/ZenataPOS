@@ -5,9 +5,9 @@ import com.example.zenatapos.model.Categories
 object DummyData {
 
     val listCategory = listOf(
-        Categories(id = 1, name = "Food", qty = 2),
-        Categories(id = 2, name = "Drink", qty = 3),
-        Categories(id = 3, name = "Snacks", qty = 1),
+        Categories(id = 1, name = "Food", qty = "2"),
+        Categories(id = 1, name = "Drink", qty = "3"),
+        Categories(id = 1, name = "Snacks", qty = "1"),
     )
 
     /*val listCategory = listOf(

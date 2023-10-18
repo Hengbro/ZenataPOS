@@ -56,6 +56,6 @@ dependencies {
     implementation ("com.intuit.ssp:ssp-android:1.1.0")
 
     // myHelper
-    implementation ("com.github.TistoW:MyHelper:2.0.41")
+    //implementation ("com.github.TistoW:MyHelper:2.0.41")
 
 }

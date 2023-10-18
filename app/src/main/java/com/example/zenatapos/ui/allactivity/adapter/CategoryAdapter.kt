@@ -21,7 +21,7 @@ class CategoryAdapter (
             itemBinding.apply {
 
                 tvName.text = item.name
-                tvQty?.text = item.qty.toString()
+                tvQty?.text = item.qty+"Product"
 
                 layout.setOnClickListener{
                     onClick.invoke(item)

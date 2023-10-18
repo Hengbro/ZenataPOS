@@ -16,8 +16,7 @@ class CategoriesActivity : AppCompatActivity() {
 
     private val adapterCategory = CategoryAdapter (
         onClick = {
-            //val intent = Intent(InfoUserActivity::class.java, it)
-            startActivity(intent)
+            getData(it)
         }
     )
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,5 +36,10 @@ class CategoriesActivity : AppCompatActivity() {
         viewModel.listCategory.observe(this){
             adapterCategory.addItems(it)
         }
+    }
+
+    private fun getData(item: Categories) {
+
+        binding.edtTextsearch!!.setText(item.name)
     }
 }

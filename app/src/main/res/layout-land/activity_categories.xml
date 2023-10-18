@@ -159,6 +159,7 @@
                 android:layout_marginBottom="@dimen/marginExtra">
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edt_textsearch"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/medium_height"
                     android:gravity="center_vertical"
