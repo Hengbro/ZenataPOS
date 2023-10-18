@@ -29,10 +29,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_margin="@dimen/marginSmall"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Taxes &amp; other charges "
-                android:textAppearance="@style/textAppearance.Heading4"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -87,204 +90,170 @@
             android:background="@color/gray4" />
 
         <LinearLayout
-            android:layout_width="@dimen/_350sdp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="@dimen/marginExtra"
-            android:orientation="vertical">
+            android:layout_gravity="center_horizontal">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="@dimen/marginNormal"
-                android:text="Rp. 154,000"
-                android:textAppearance="@style/textAppearance.Heading1"
-                android:textStyle="bold" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:text="Choice a payment method below"
-                android:textAppearance="@style/textAppearance.Body3" />
-
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_marginTop="@dimen/marginExtra"
-                android:background="@color/gray4" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginSmall"
-                android:padding="@dimen/paddingSmall">
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/extra_height"
+                android:layout_marginEnd="@dimen/extra_height">
 
                 <TextView
-                    android:id="@+id/tv_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Cash"
-                    android:textAppearance="@style/textAppearance.Body2"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/marginNormal"
+                    android:text="Rp. 154,000"
+                    android:textAppearance="@style/textAppearance.Heading1"
                     android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/marginNormal"
-                        android:text="Rp. 154,000"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/marginNormal"
-                        android:text="Rp. 160,000"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/marginNormal"
-                        android:text="Rp. 200,000"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="@dimen/marginNormal"
-                        android:text="Custom"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:textColor="@color/colorPrimary"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray4" />
-
-            <com.google.android.material.button.MaterialButton
-                style="@style/Button.Normal"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:backgroundTint="@color/white"
-                android:gravity="start|center_vertical"
-                android:padding="@dimen/marginNormal"
-                android:text="QRIS E-wallet"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold"
-                app:iconTint="@color/gray3"
-                app:iconGravity="end"
-                app:iconSize="@dimen/imageNormal"
-                app:icon="@drawable/asset_ic_right_arrow"
-                android:textColor="@color/dark" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginSmall"
-                android:padding="@dimen/paddingSmall">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal"
+                    android:text="Choice a payment method below"
+                    android:textAppearance="@style/textAppearance.Body3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="@dimen/marginExtra"
+                    android:background="@color/gray4" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:layout_margin="@dimen/marginSmall"
+                    android:padding="@dimen/paddingSmall">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Cash"
+                        android:textAppearance="@style/textAppearance.Body3.Bold"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/marginNormal"
+                            android:text="Rp. 154,000"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/marginNormal"
+                            android:text="Rp. 160,000"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/marginNormal"
+                            android:text="Rp. 200,000"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/marginNormal"
+                            android:layout_marginTop="@dimen/marginNormal"
+                            android:text="Custom"
+                            android:textAppearance="@style/textAppearance.Body2"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
                     android:text="QRIS E-wallet"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textStyle="bold" />
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    app:iconTint="@color/gray3"
+                    app:iconGravity="end"
+                    app:iconSize="@dimen/imageNormal"
+                    app:icon="@drawable/asset_ic_right_arrow"
+                    android:textColor="@color/dark"/>
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"
-                    android:src="@drawable/asset_ic_right_arrow" />
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray4" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginSmall"
-                android:padding="@dimen/paddingSmall">
-
-                <TextView
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Debit / Credit Card"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textStyle="bold" />
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"
-                    android:src="@drawable/asset_ic_right_arrow" />
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray4" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginSmall"
-                android:padding="@dimen/paddingSmall">
-
-                <TextView
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="Bank Transfer"
+                    android:layout_height="@dimen/medium_height"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
+                    android:text="Debit / Credit card"
                     android:textAppearance="@style/textAppearance.Body2"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:iconTint="@color/gray3"
+                    app:iconGravity="end"
+                    app:iconSize="@dimen/imageNormal"
+                    app:icon="@drawable/asset_ic_right_arrow"
+                    android:textColor="@color/dark" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"
-                    android:src="@drawable/asset_ic_right_arrow" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
 
-            </RelativeLayout>
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
+                    android:text="Bank transfer"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textStyle="bold"
+                    app:iconTint="@color/gray3"
+                    app:iconGravity="end"
+                    app:iconSize="@dimen/imageNormal"
+                    app:icon="@drawable/asset_ic_right_arrow"
+                    android:textColor="@color/dark" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray4" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+            </LinearLayout>
 
         </LinearLayout>
 

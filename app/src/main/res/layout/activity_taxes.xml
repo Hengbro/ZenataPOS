@@ -16,7 +16,7 @@
             android:layout_height="@dimen/large_height"
             android:layout_margin="@dimen/marginNormal">
 
-            <androidx.appcompat.widget.AppCompatImageButton
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
                 android:layout_width="@dimen/buttonImage"
                 android:layout_height="@dimen/buttonImage"
@@ -35,7 +35,7 @@
                 android:layout_marginBottom="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Taxes &amp; other charges "
-                android:textAppearance="@style/textAppearance.Heading4"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -84,18 +84,16 @@
             android:layout_marginEnd="@dimen/marginMedium"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/normal_height"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.Normal"
+                android:backgroundTint="@color/gray5"
                 android:text="Reset all taxes"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:background="@color/gray5"
-                android:layout_marginStart="@dimen/marginNormal"
-                android:layout_marginEnd="@dimen/marginNormal"
-                android:layout_marginTop="@dimen/marginMedium"
-                android:layout_marginBottom="@dimen/marginMedium"/>
+                android:layout_margin="@dimen/marginNormal"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textColor="@color/dark"/>
+
 
             <View
                 android:layout_width="match_parent"
@@ -118,16 +116,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Gst (10%)"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/textBody1" />
+                        android:textAppearance="@style/textAppearance.Body3.Bold"/>
 
                     <TextView
                         android:id="@+id/tv_saran"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Apply GST to all items"
-                        android:textSize="@dimen/textBody2" />
+                        android:textAppearance="@style/textAppearance.Body3" />
 
                 </LinearLayout>
 

@@ -35,7 +35,7 @@
                 android:layout_marginBottom="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Rp. 154,000 Cash"
-                android:textAppearance="@style/textAppearance.Heading4"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -91,33 +91,55 @@
             android:background="@color/gray4"/>
 
         <LinearLayout
-            android:layout_width="@dimen/_350sdp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_margin="@dimen/marginExtra"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/normal_height"
-                android:text="Cash amount received"
-                android:textStyle="bold"
-                android:textAppearance="@style/textAppearance.Body2"/>
-
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/large_height"
-                android:background="@drawable/bg_input"
-                android:text="Enter cash amount received"
-                android:padding="@dimen/paddingMedium"
-                android:textAppearance="@style/textAppearance.Body2"/>
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/extra_height"
+                android:layout_marginEnd="@dimen/extra_height">
 
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/large_height"
-                android:text="Tender"
-                android:enabled="false"
-                style="@style/Button.Normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/normal_height"
+                    android:text="Cash amount received"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/textAppearance.Body2"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout.Rounded"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    app:endIconMode="clear_text">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/medium_height"
+                        android:gravity="center_vertical"
+                        android:hint="Enter cash amount received"
+                        android:paddingVertical="@dimen/paddingSmall"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:paddingEnd="@dimen/paddingNormal"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:textColor="@color/natural_900"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/large_height"
+                    android:text="Tender"
+                    android:enabled="false"
+                    android:layout_marginTop="@dimen/marginNormal"
+                    style="@style/Button.Normal"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

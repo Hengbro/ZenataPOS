@@ -36,33 +36,27 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayout.Rounded"
         android:layout_width="match_parent"
         android:layout_height="@dimen/medium_height"
-        android:background="@drawable/bg_input"
-        android:backgroundTint="@color/blue_50"
-        android:layout_margin="@dimen/marginNormal"
-        android:orientation="horizontal">
+        android:layout_margin="@dimen/marginMedium"
+        app:startIconDrawable="@drawable/asset_ic_search"
+        app:startIconTint="@color/colorPrimary"
+        app:endIconMode="clear_text">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="@dimen/buttonImage"
-            android:layout_height="@dimen/buttonImage"
-            android:src="@drawable/asset_ic_search"
-            android:padding="@dimen/buttonImagePadding"
-            app:tint="@color/blue_500"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="@dimen/marginSmall"/>
-
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:text="Enter customer name"
-            android:textAppearance="@style/textAppearance.Body3"
-            app:endIconMode="clear_text"
-            android:backgroundTint="@color/blue_50" />
+            android:layout_height="@dimen/medium_height"
+            android:gravity="center_vertical"
+            android:hint="Enter costumer full name"
+            android:paddingVertical="@dimen/paddingSmall"
+            android:paddingStart="@dimen/paddingNormal"
+            android:paddingEnd="@dimen/paddingNormal"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:textColor="@color/natural_900"/>
 
-    </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <View
         android:layout_width="match_parent"
@@ -73,7 +67,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/marginExtra"
-        android:visibility="visible"
+        android:visibility="gone"
         android:orientation="vertical">
 
         <com.google.android.material.card.MaterialCardView
@@ -115,6 +109,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible"
+        android:layout_marginStart="@dimen/marginMedium"
+        android:layout_marginEnd="@dimen/marginMedium"
         android:layout_marginBottom="@dimen/marginNormal">
 
         <ProgressBar

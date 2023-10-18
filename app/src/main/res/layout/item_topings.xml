@@ -8,10 +8,21 @@
     android:background="@color/white"
     android:orientation="vertical">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray3"
+        android:layout_marginTop="@dimen/marginNormal"
+        android:layout_marginEnd="@dimen/marginNormal"
+        android:layout_marginStart="@dimen/marginNormal"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/normal_height"
-        android:layout_margin="@dimen/marginMedium">
+        android:layout_marginStart="@dimen/marginMedium"
+        android:layout_marginEnd="@dimen/marginMedium"
+        android:layout_marginTop="@dimen/marginSmall"
+        android:layout_marginBottom="@dimen/marginSmall">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -25,7 +36,7 @@
                 android:text="Add cheese"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textAppearance="@style/textAppearance.Body2"/>
+                android:textAppearance="@style/textAppearance.Body3.Bold"/>
 
             <TextView
                 android:id="@+id/tv_saran"
@@ -36,10 +47,11 @@
 
         </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatCheckBox
+        <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:padding="@dimen/paddingSmall"/>
 
     </RelativeLayout>

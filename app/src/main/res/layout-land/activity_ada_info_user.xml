@@ -1,82 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/white">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSmall">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/buttonImage"
+            android:layout_height="@dimen/buttonImage"
+            android:src="@drawable/asset_ic_close"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/buttonImagePadding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/marginSmall"
+            android:layout_toEndOf="@+id/btn_close"
+            android:text="Add new costumer"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/marginSmall"
+            android:text="Save costumer"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray4" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/large_height"
-                android:layout_margin="@dimen/marginNormal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/marginNormal"
-                    android:padding="@dimen/buttonImagePadding"
-                    android:src="@drawable/asset_ic_close" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/marginSmall"
-                    android:layout_marginTop="@dimen/marginSmall"
-                    android:layout_marginEnd="@dimen/marginSmall"
-                    android:layout_marginBottom="@dimen/marginSmall"
-                    android:text="Add new costumer"
-                    android:textAppearance="@style/textAppearance.Heading4"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/marginSmall"
-                    android:layout_marginTop="@dimen/marginSmall"
-                    android:layout_marginEnd="@dimen/marginSmall"
-                    android:layout_marginBottom="@dimen/marginSmall"
-                    android:text="Save costumer"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:background="@color/gray4" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginMedium"
-                android:layout_marginTop="@dimen/marginLarge"
-                android:text="Cotumer full name"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold" />
-
+                android:text="Customer name"
+                android:textStyle="bold"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:layout_marginStart="@dimen/marginMedium" />
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/TextInputLayout.Rounded"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginMedium">
+                android:layout_margin="@dimen/marginMedium"
+                app:endIconMode="clear_text">
 
                 <androidx.appcompat.widget.AppCompatEditText
                     android:layout_width="match_parent"
@@ -87,19 +81,17 @@
                     android:paddingStart="@dimen/paddingNormal"
                     android:paddingEnd="@dimen/paddingNormal"
                     android:textAppearance="@style/textAppearance.Body2"
-                    android:textColor="@color/natural_900"
-                    app:endIconMode="clear_text" />
+                    android:textColor="@color/natural_900"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginMedium"
                 android:text="Phone number"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:layout_marginStart="@dimen/marginMedium" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -107,145 +99,44 @@
                 android:layout_margin="@dimen/marginMedium"
                 android:orientation="horizontal">
 
-                <LinearLayout
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/marginNormal"
                     android:layout_weight="1"
-                    android:background="@drawable/bg_input"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="@dimen/medium_height"
-                        android:layout_marginStart="@dimen/marginNormal"
-                        android:layout_weight="3"
-                        android:gravity="center_vertical"
-                        android:text="Indonesia (+62)"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:textColor="@color/colorPrimary" />
-
-                    <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="@dimen/buttonImage"
-                        android:layout_height="@dimen/buttonImage"
-                        android:layout_alignParentEnd="true"
-                        android:layout_gravity="center_vertical"
-                        android:padding="@dimen/buttonImagePadding"
-                        android:src="@drawable/asset_ic_right_alternate_arrow"
-                        app:tint="@color/colorPrimary" />
-
-                </LinearLayout>
-
-                <EditText
-                    android:layout_width="0dp"
                     android:layout_height="@dimen/medium_height"
+                    style="@style/Button.Normal"
+                    android:backgroundTint="@color/gray5"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginEnd="@dimen/marginNormal"
+                    android:text="Indonesia (+62)"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    android:textStyle="bold"
+                    app:iconTint="@color/colorPrimary"
+                    app:iconGravity="end"
+                    app:iconSize="@dimen/imageNormal"
+                    app:icon="@drawable/asset_ic_right_alternate_arrow"
+                    android:textColor="@color/colorPrimary"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputLayout.Rounded"
+                    android:layout_width="0dp"
                     android:layout_weight="3"
-                    android:background="@drawable/bg_input"
-                    android:gravity="center_vertical"
-                    android:hint="0888 **** ****"
-                    android:padding="@dimen/marginNormal"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textColor="@color/natural_900"
-                    app:endIconMode="clear_text" />
+                    android:layout_height="@dimen/medium_height">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/medium_height"
+                        android:gravity="center_vertical"
+                        android:hint="0888 ***** ***"
+                        android:paddingVertical="@dimen/paddingSmall"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:paddingEnd="@dimen/paddingNormal"
+                        android:textAppearance="@style/textAppearance.Body2"
+                        android:textColor="@color/natural_900"
+                        app:endIconMode="clear_text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginMedium"
-                android:text="Email address"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:layout_margin="@dimen/marginMedium"
-                android:background="@drawable/bg_input"
-                android:gravity="center_vertical"
-                android:hint="example@gmail.com"
-                android:padding="@dimen/marginNormal"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textColor="@color/natural_900"
-                app:endIconMode="clear_text" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/marginMedium"
-                android:text="Costumer label"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textStyle="bold" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_margin="@dimen/marginMedium"
-                android:background="@color/gray4" />
-
-
-            <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:text="No customer label"
-                    android:textAppearance="@style/textAppearance.Body3" />
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:padding="@dimen/buttonImagePadding"
-                    android:src="@drawable/asset_ic_right_arrow" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/large_height"
-                android:layout_margin="@dimen/marginNormal">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/btn_clear"
-                    android:layout_width="@dimen/buttonImage"
-                    android:layout_height="@dimen/buttonImage"
-                    android:src="@drawable/asset_ic_close"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/marginNormal"
-                    android:padding="@dimen/buttonImagePadding"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/marginSmall"
-                    android:layout_marginTop="@dimen/marginSmall"
-                    android:layout_marginEnd="@dimen/marginSmall"
-                    android:layout_marginBottom="@dimen/marginSmall"
-                    android:layout_toEndOf="@+id/btn_clear"
-                    android:text="Add new costumer"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/medium_height"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:layout_margin="@dimen/marginSmall"
-                    android:text="Save costumer"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-
-            </RelativeLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.5dp"
-                android:layout_margin="@dimen/marginMedium"
-                android:background="@color/gray4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -320,4 +211,4 @@
 
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

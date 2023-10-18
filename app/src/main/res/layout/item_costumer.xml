@@ -18,7 +18,7 @@
             app:cardCornerRadius="@dimen/_35sdp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/marginNormal"
+            android:layout_marginStart="@dimen/marginSmall"
             android:layout_marginEnd="@dimen/marginNormal"
             android:layout_gravity="center_vertical">
 
@@ -53,7 +53,7 @@
                 android:text="Name costumer"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textAppearance="@style/textAppearance.Body2"/>
+                android:textAppearance="@style/textAppearance.Body3"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

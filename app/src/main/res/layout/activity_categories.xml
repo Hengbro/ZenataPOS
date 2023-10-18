@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:text="Product &amp; Inventory"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:text="Product list"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:text="Variant options"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:text="Modifiers"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:text="Categories"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:gravity="left|center_vertical"
+                android:paddingStart="@dimen/marginMedium"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:text="Main Menu"
+            app:icon="@drawable/asset_ic_hamburger_menu"
+            app:iconTint="@color/dark"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/marginMedium"
+            android:gravity="center_vertical"
+            android:layout_alignParentBottom="true"
+            android:paddingStart="@dimen/paddingMedium"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/dark"
+            android:textAppearance="@style/textAppearance.Body2.Bold"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/gray4"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new category"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/marginExtra"
+            android:layout_marginStart="@dimen/marginExtra"
+            android:layout_marginEnd="@dimen/marginExtra">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/asset_ic_search"
+                android:layout_height="@dimen/medium_height"
+                android:layout_marginBottom="@dimen/marginExtra">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:gravity="center_vertical"
+                    android:hint="Enter costumer name, phone or email"
+                    android:paddingVertical="@dimen/paddingSmall"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:paddingEnd="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/natural_900"
+                    app:endIconMode="clear_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_categories_product"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

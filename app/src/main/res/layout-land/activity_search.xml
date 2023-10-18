@@ -26,36 +26,27 @@
 
             </LinearLayout>
 
-            <RelativeLayout
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
                 android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/asset_ic_search"
                 android:layout_height="@dimen/medium_height"
                 android:layout_marginStart="@dimen/marginMedium"
-                android:layout_marginEnd="@dimen/marginMedium"
-                android:background="@drawable/bg_input">
+                android:layout_marginEnd="@dimen/marginLarge">
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:id="@+id/btn_search"
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_margin="@dimen/marginNormal"
-                    android:layout_centerVertical="true"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/asset_ic_search" />
-
-                <EditText
+                <androidx.appcompat.widget.AppCompatEditText
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/normal_height"
-                    android:layout_marginStart="@dimen/marginBox"
-                    android:hint="Search for product or categories"
-                    android:textColor="@color/natural_900"
+                    android:layout_height="@dimen/medium_height"
                     android:gravity="center_vertical"
+                    android:hint="Search for product or categories"
+                    android:paddingVertical="@dimen/paddingSmall"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:paddingEnd="@dimen/paddingNormal"
                     android:textAppearance="@style/textAppearance.Body2"
-                    android:layout_toEndOf="@+id/btn_search"
-                    android:background="@color/gray5"
+                    android:textColor="@color/natural_900"
                     app:endIconMode="clear_text" />
 
-            </RelativeLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -131,7 +122,7 @@
                         android:textStyle="bold"
                         android:padding="@dimen/paddingNormal"/>
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="@dimen/buttonImage"
                         android:layout_height="@dimen/buttonImage"
                         android:src="@drawable/asset_ic_kebab_menu"

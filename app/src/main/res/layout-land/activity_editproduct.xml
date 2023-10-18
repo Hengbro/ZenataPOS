@@ -88,41 +88,41 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Additional notes"
-                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textAppearance="@style/textAppearance.Body3"
                     android:textStyle="bold"
                     android:layout_margin="@dimen/marginNormal"/>
 
-                <RelativeLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/extra_height"
+                    android:layout_height="wrap_content"
                     android:layout_margin="@dimen/paddingNormal"
-                    android:background="@drawable/bg_input">
+                    style="@style/TextInputLayout.Rounded">
 
-                    <EditText
+
+                    <androidx.appcompat.widget.AppCompatEditText
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Enter additionla notes"
-                        android:textColor="@color/natural_900"
-                        android:textSize="@dimen/textBody1"
-                        android:padding="@dimen/paddingMedium"
-                        android:background="@color/gray5"
-                        app:endIconMode="clear_text" />
+                        android:layout_height="@dimen/medium_height"
+                        android:gravity="center_vertical"
+                        android:hint="Enter costumer full name"
+                        android:paddingVertical="@dimen/paddingSmall"
+                        android:paddingStart="@dimen/paddingNormal"
+                        android:paddingEnd="@dimen/paddingNormal"
+                        android:inputType="textMultiLine"
+                        android:minLines="2"
+                        android:maxLines="4"
+                        android:textAppearance="@style/textAppearance.Body3"
+                        android:textColor="@color/natural_900" />
 
-                </RelativeLayout>
+                </com.google.android.material.textfield.TextInputLayout>
+
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Taxes &amp; other charges "
-                    android:textSize="@dimen/textHeading4"
+                    android:textAppearance="@style/textAppearance.Body3"
                     android:textStyle="bold"
                     android:layout_margin="@dimen/marginNormal" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:layout_margin="@dimen/marginNormal"
-                    android:background="@color/gray5" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"

@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:text="Categories"
                     android:textStyle="bold"
-                    android:textAppearance="@style/textAppearance.Body2"/>
+                    android:textAppearance="@style/textAppearance.Body3"/>
 
                 <TextView
                     android:id="@+id/tv_saran"

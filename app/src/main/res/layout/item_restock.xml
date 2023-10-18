@@ -31,7 +31,7 @@
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/image_view"
-                    android:layout_width="wrap_content"
+                    android:layout_width="@dimen/normal_height"
                     android:layout_height="@dimen/normal_height"
                     android:scaleType="centerCrop"
                     android:src="@drawable/asset_ic_table_management" />
@@ -51,7 +51,7 @@
                     android:text="Nama product"
                     android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textAppearance="@style/textAppearance.Body2" />
+                    android:textAppearance="@style/textAppearance.Body3.Bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/medium_height"
                 android:text="Don't restock"
                 style="@style/Button.TextButton"
                 android:enabled="true"
@@ -96,7 +96,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/medium_height"
                 android:text="Restock"
                 style="@style/Button.TextButton"
                 android:enabled="false"

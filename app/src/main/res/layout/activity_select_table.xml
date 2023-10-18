@@ -35,7 +35,7 @@
                 android:layout_marginBottom="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Select table"
-                android:textAppearance="@style/textAppearance.Heading4"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -119,7 +119,7 @@
                     android:text="Dining hall"
                     android:textStyle="bold"
                     android:layout_marginStart="@dimen/marginExtra"
-                    android:textAppearance="@style/textAppearance.Body1"/>
+                    android:textAppearance="@style/textAppearance.Body3"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
