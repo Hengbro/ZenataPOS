@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_height"
+        android:layout_marginEnd="@dimen/marginNormal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_height"
+            android:layout_marginStart="@dimen/marginSmall"
+            android:layout_marginEnd="@dimen/marginSmall"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:padding="@dimen/buttonImagePadding"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customize Navbar"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save changes"
+            style="@style/Button.Normal"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/extra_height"
+        android:layout_marginEnd="@dimen/medium_height"
+        android:layout_marginTop="@dimen/medium_height">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/extra_height"
+            android:layout_marginEnd="@dimen/extra_height">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginLarge"
+                android:layout_marginTop="@dimen/marginLarge"
+                android:layout_marginBottom="@dimen/marginMedium"
+                android:text="Reverange the pages according to your needs. You can also add multiple Favorite pages and rename them to better suit your selling needs"
+                android:textAppearance="@style/textAppearance.Body3"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.Normal"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:text="Library"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:textStyle="bold"
+                app:iconTint="@color/gray3"
+                app:iconGravity="start"
+                app:iconSize="@dimen/imageNormal"
+                app:icon="@drawable/asset_ic_hamburger_menu"
+                android:textColor="@color/dark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    style="@style/Button.Normal"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginStart="@dimen/marginMedium"
+                    android:layout_marginEnd="@dimen/marginNormal"
+                    android:text="Favorites"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    android:textStyle="bold"
+                    app:iconTint="@color/gray3"
+                    app:iconGravity="start"
+                    app:iconSize="@dimen/imageNormal"
+                    app:icon="@drawable/asset_ic_hamburger_menu"
+                    android:textColor="@color/dark"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/buttonImage"
+                    android:layout_height="@dimen/buttonImage"
+                    android:src="@drawable/asset_ic_manage_customers"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/marginLarge"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/buttonImagePadding"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.Normal"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/medium_height"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:text="Add new favorites page"
+                android:textAppearance="@style/textAppearance.Body3.Bold"
+                app:iconTint="@color/selesaiSoft"
+                app:iconGravity="start"
+                app:iconSize="@dimen/imageNormal"
+                app:icon="@drawable/baseline_add"
+                android:textColor="@color/selesaiSoft"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.Normal"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:text="Keypad"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:textStyle="bold"
+                app:iconTint="@color/gray3"
+                app:iconGravity="start"
+                app:iconSize="@dimen/imageNormal"
+                app:icon="@drawable/asset_ic_hamburger_menu"
+                android:textColor="@color/dark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.Normal"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:text="Tables"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:textStyle="bold"
+                app:iconTint="@color/gray3"
+                app:iconGravity="start"
+                app:iconSize="@dimen/imageNormal"
+                app:icon="@drawable/asset_ic_hamburger_menu"
+                android:textColor="@color/dark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                style="@style/Button.Normal"
+                android:backgroundTint="@color/white"
+                android:gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/marginMedium"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:text="Bills"
+                android:textAppearance="@style/textAppearance.Body3"
+                android:textStyle="bold"
+                app:iconTint="@color/gray3"
+                app:iconGravity="start"
+                app:iconSize="@dimen/imageNormal"
+                app:icon="@drawable/asset_ic_hamburger_menu"
+                android:textColor="@color/dark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray4"
+                android:layout_marginStart="@dimen/marginMedium"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

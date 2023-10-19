@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_height"
+        android:layout_marginEnd="@dimen/marginNormal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_height"
+            android:layout_marginStart="@dimen/marginSmall"
+            android:layout_marginEnd="@dimen/marginSmall"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:src="@drawable/asset_ic_close"
+                android:padding="@dimen/buttonImagePadding"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit page name"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:layout_marginStart="@dimen/marginNormal"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save page name"
+            style="@style/Button.TextButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginExtra"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit page name"
+            android:textAppearance="@style/textAppearance.Body3.Bold"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/TextInputLayout.Rounded"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:layout_marginTop="@dimen/marginNormal"
+            app:endIconMode="clear_text">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/medium_height"
+                android:gravity="center_vertical"
+                android:hint="Favorites"
+                android:paddingVertical="@dimen/paddingSmall"
+                android:paddingStart="@dimen/paddingNormal"
+                android:paddingEnd="@dimen/paddingNormal"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/natural_900"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_height"
+            style="@style/Button.Normal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginExtra"
+            android:text="Add a breif name for this page, or leave it blank to use Favorites"
+            android:textAppearance="@style/textAppearance.Body3.Bold"
+            android:backgroundTint="@color/white"
+            app:iconTint="@color/gray3"
+            app:iconGravity="textStart"
+            app:iconSize="@dimen/imageNormal"
+            app:icon="@drawable/asset_ic_info"
+            android:textColor="@color/gray3"/>
+
+    </LinearLayout>
+
+</LinearLayout>
