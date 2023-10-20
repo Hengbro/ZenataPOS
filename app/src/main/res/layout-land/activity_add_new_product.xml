@@ -121,6 +121,7 @@
                 android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/blue_400"
                 android:paddingStart="@dimen/paddingMedium"
+                android:paddingEnd="@dimen/marginMedium"
                 app:icon="@drawable/asset_ic_row_down_link"
                 app:iconGravity="end"
                 app:iconSize="@dimen/imageNormal"
@@ -143,6 +144,7 @@
                 android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/gray1"
                 android:paddingStart="@dimen/paddingMedium"
+                android:paddingEnd="@dimen/marginMedium"
                 app:icon="@drawable/asset_ic_row_down_link"
                 app:iconGravity="end"
                 app:iconSize="@dimen/imageNormal"
@@ -213,6 +215,7 @@
                 <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/small_height"
+                    android:paddingEnd="@dimen/marginNormal"
                     android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
@@ -498,6 +501,8 @@
                 android:text="Per product"
                 android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/gray3"
+                android:paddingStart="@dimen/paddingMedium"
+                android:paddingEnd="@dimen/marginMedium"
                 app:icon="@drawable/asset_ic_row_down_link"
                 app:iconGravity="end"
                 app:iconSize="@dimen/imageNormal"
@@ -519,6 +524,8 @@
                 android:text="Select dish type"
                 android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/blue_400"
+                android:paddingStart="@dimen/paddingMedium"
+                android:paddingEnd="@dimen/marginMedium"
                 app:icon="@drawable/asset_ic_row_down_link"
                 app:iconGravity="end"
                 app:iconSize="@dimen/imageNormal"

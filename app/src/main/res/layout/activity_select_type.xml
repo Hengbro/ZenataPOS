@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginNormal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="@dimen/buttonImage"
+                android:layout_height="@dimen/buttonImage"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginNormal"
+                android:padding="@dimen/buttonImagePadding"
+                android:src="@drawable/asset_ic_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginSmall"
+                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Select dish type"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/marginExtra">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
+                    android:text="Appetizers"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    android:textColor="@color/dark"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
+                    android:text="Main course"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    android:textColor="@color/dark"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
+                    android:text="Desserts"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    android:textColor="@color/dark"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Button.Normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:padding="@dimen/marginNormal"
+                    android:text="Sides"
+                    android:textAppearance="@style/textAppearance.Body3.Bold"
+                    android:textColor="@color/dark"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
