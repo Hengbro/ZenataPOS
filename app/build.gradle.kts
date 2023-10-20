@@ -40,7 +40,7 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -50,26 +50,26 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    implementation ("com.intuit.sdp:sdp-android:1.1.0")
-    implementation ("com.intuit.ssp:ssp-android:1.1.0")
+    implementation("com.intuit.sdp:sdp-android:1.1.0")
+    implementation("com.intuit.ssp:ssp-android:1.1.0")
 
     //live data
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
 
     //Retrofit
-    implementation ("com.squareup.okhttp3:okhttp:4.9.2")
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.okhttp3:logging-interceptor:4.9.2")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation ("com.google.code.gson:gson:2.9.1")
+    implementation("com.squareup.okhttp3:okhttp:4.9.2")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.google.code.gson:gson:2.9.1")
 
     // koin
-    implementation ("io.insert-koin:koin-core:3.2.0-beta-1")
-    implementation ("io.insert-koin:koin-android:3.2.0-beta-1")
+    implementation("io.insert-koin:koin-core:3.2.0-beta-1")
+    implementation("io.insert-koin:koin-android:3.2.0-beta-1")
 
     // myHelper
-    //implementation ("com.github.TistoW:MyHelper:2.0.38")
+    implementation("com.github.TistoW:MyHelper:2.0.41")
 
 }
