@@ -25,7 +25,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/normal_height"
                     android:layout_marginStart="@dimen/marginMedium">
 
                     <androidx.appcompat.widget.AppCompatImageView
@@ -89,7 +89,6 @@
                         android:layout_height="@dimen/buttonImage"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:layout_marginEnd="@dimen/marginLarge"
                         android:padding="@dimen/buttonImagePadding"
                         android:src="@drawable/asset_ic_kebab_menu" />
 
@@ -99,7 +98,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/normal_height"
                 android:layout_marginBottom="@dimen/marginMedium"
                 android:background="@color/gray5"
                 android:orientation="horizontal"
@@ -112,6 +111,8 @@
                     android:layout_marginStart="@dimen/marginNormal"
                     android:backgroundTint="@color/red"
                     android:text="Moring Menu"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    android:layout_gravity="center_vertical"
                     android:textColor="@color/white" />
 
                 <com.google.android.material.button.MaterialButton
@@ -121,6 +122,8 @@
                     android:layout_marginStart="@dimen/marginNormal"
                     android:backgroundTint="@color/white"
                     android:text="Evening Menu"
+                    android:textAppearance="@style/textAppearance.Body3"
+                    android:layout_gravity="center_vertical"
                     android:textColor="@color/red4" />
 
             </LinearLayout>
@@ -290,7 +293,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/marginMedium"
                 android:layout_marginTop="@dimen/marginNormal"
-                android:layout_marginEnd="@dimen/marginMedium"
                 android:orientation="vertical"
                 android:visibility="visible">
 
@@ -306,7 +308,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
-                    android:background="@color/gray3" />
+                    android:background="@color/gray4" />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -758,7 +760,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="@dimen/normal_height">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -773,7 +775,8 @@
                             android:layout_width="@dimen/buttonImage"
                             android:layout_height="@dimen/buttonImage"
                             android:layout_alignParentEnd="true"
-                            android:layout_marginEnd="8dp"
+                            android:layout_marginEnd="@dimen/marginNormal"
+                            android:layout_centerVertical="true"
                             android:padding="@dimen/buttonImagePadding"
                             android:src="@drawable/asset_ic_kebab_menu" />
 
@@ -846,7 +849,6 @@
                             android:layout_centerVertical="true"
                             android:padding="@dimen/buttonImagePadding"
                             android:src="@drawable/baseline_chevron_right" />
-
 
                     </RelativeLayout>
 

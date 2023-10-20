@@ -14,7 +14,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/large_height"
-            android:layout_margin="@dimen/marginNormal">
+            android:paddingStart="@dimen/paddingMedium"
+            android:paddingEnd="@dimen/paddingMedium">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
@@ -128,7 +129,7 @@
                 style="@style/Button.Normal"
                 android:backgroundTint="@color/gray5"
                 android:text="2"
-                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/black"/>
 
             <com.google.android.material.button.MaterialButton
@@ -138,7 +139,7 @@
                 style="@style/Button.Normal"
                 android:backgroundTint="@color/gray5"
                 android:text="3"
-                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/black"/>
 
             <com.google.android.material.button.MaterialButton
@@ -148,7 +149,7 @@
                 style="@style/Button.Normal"
                 android:backgroundTint="@color/gray5"
                 android:text="4"
-                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/black"/>
 
             <com.google.android.material.button.MaterialButton
@@ -158,7 +159,7 @@
                 style="@style/Button.Normal"
                 android:backgroundTint="@color/gray5"
                 android:text="5"
-                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/black"/>
 
             <com.google.android.material.button.MaterialButton
@@ -168,7 +169,7 @@
                 style="@style/Button.Normal"
                 android:backgroundTint="@color/gray5"
                 android:text="Custom"
-                android:textAppearance="@style/textAppearance.Body3.Bold"
+                android:textAppearance="@style/textAppearance.Body3"
                 android:textColor="@color/black"/>
 
         </LinearLayout>

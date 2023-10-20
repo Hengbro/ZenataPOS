@@ -9,7 +9,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/medium_height">
+        android:layout_height="@dimen/medium_height"
+        android:paddingStart="@dimen/paddingMedium"
+        android:paddingEnd="@dimen/paddingMedium">
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="@dimen/buttonImage"

@@ -18,7 +18,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/large_height"
-                android:layout_margin="@dimen/marginNormal">
+                android:paddingStart="@dimen/paddingMedium"
+                android:paddingEnd="@dimen/paddingMedium">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/btn_clear"
@@ -26,52 +27,24 @@
                     android:layout_height="@dimen/buttonImage"
                     android:src="@drawable/asset_ic_close"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/marginNormal"
                     android:padding="@dimen/buttonImagePadding"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="@dimen/marginSmall"
-                    android:layout_marginTop="@dimen/marginSmall"
-                    android:layout_marginEnd="@dimen/marginSmall"
-                    android:layout_marginBottom="@dimen/marginSmall"
+                    android:layout_marginStart="@dimen/marginNormal"
                     android:layout_toEndOf="@+id/btn_clear"
                     android:text="Edit Nama product"
                     android:textAppearance="@style/textAppearance.Body2"
                     android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/normal_height"
-                    android:layout_alignParentEnd="true"
-                    android:visibility="gone"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Remove"
-                        android:textColor="@color/red"
-                        android:textAppearance="@style/textAppearance.Body2"
-                        android:layout_marginEnd="@dimen/marginMedium"
-                        android:textStyle="bold"/>
-
-                    <com.google.android.material.button.MaterialButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="@dimen/medium_height"
-                        android:text="Save"
-                        android:textColor="@color/white"
-                        style="@style/Button.Normal" />
-
-                </LinearLayout>
 
                 <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/medium_height"
                     android:text="Save changes"
                     android:enabled="true"
+                    android:layout_margin="@dimen/marginSmall"
                     android:layout_alignParentEnd="true"
                     style="@style/Button.Normal"/>
 
@@ -95,7 +68,7 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/paddingNormal"
+                    android:layout_margin="@dimen/marginNormal"
                     style="@style/TextInputLayout.Rounded">
 
 

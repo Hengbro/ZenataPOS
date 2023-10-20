@@ -216,7 +216,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/small_height"
                     android:paddingEnd="@dimen/marginNormal"
-                    android:layout_alignParentEnd="true" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
 
             </RelativeLayout>
 
@@ -321,7 +322,7 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:orientation="horizontal">
@@ -411,7 +412,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_centerVertical="true" />
 
             </RelativeLayout>
 
@@ -468,7 +469,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
-                    android:layout_gravity="center_vertical" />
+                    android:layout_centerVertical="true" />
 
             </RelativeLayout>
 
@@ -482,7 +483,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/marginExtra"
                 android:text="Additional information"
-                android:textAppearance="@style/textAppearance.Body1.Bold"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textColor="@color/dark" />
 
             <TextView

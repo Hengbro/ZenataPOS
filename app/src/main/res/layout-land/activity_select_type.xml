@@ -14,14 +14,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/marginNormal">
+            android:paddingStart="@dimen/paddingMedium"
+            android:paddingBottom="@dimen/paddingNormal">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
                 android:layout_width="@dimen/buttonImage"
                 android:layout_height="@dimen/buttonImage"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/marginNormal"
                 android:padding="@dimen/buttonImagePadding"
                 android:src="@drawable/asset_ic_close" />
 
@@ -29,14 +29,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginSmall"
-                android:layout_marginTop="@dimen/marginSmall"
-                android:layout_marginEnd="@dimen/marginSmall"
-                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_marginStart="@dimen/marginNormal"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Select dish type"
                 android:textAppearance="@style/textAppearance.Body2.Bold"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 

@@ -14,7 +14,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/large_height"
-            android:layout_margin="@dimen/marginNormal">
+            android:paddingStart="@dimen/paddingNormal">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
@@ -29,30 +29,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginSmall"
-                android:layout_marginTop="@dimen/marginSmall"
-                android:layout_marginEnd="@dimen/marginSmall"
-                android:layout_marginBottom="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Add costumer to size"
-                android:textAppearance="@style/textAppearance.Heading4"
+                android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginSmall"
-                android:layout_marginTop="@dimen/marginSmall"
-                android:layout_marginEnd="@dimen/marginSmall"
-                android:layout_marginBottom="@dimen/marginSmall"
+                android:layout_marginEnd="@dimen/marginNormal"
                 android:text="Add new costumer"
                 android:textAppearance="@style/textAppearance.Body2"
                 android:textColor="@color/colorPrimary"
                 android:textStyle="bold" />
-
 
         </RelativeLayout>
 
@@ -61,50 +52,56 @@
             android:layout_height="0.5dp"
             android:background="@color/gray4" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/TextInputLayout.Rounded"
-            android:layout_width="match_parent"
-            app:startIconDrawable="@drawable/asset_ic_search"
-            android:layout_height="@dimen/medium_height"
-            android:layout_marginStart="@dimen/marginLarge"
-            android:layout_marginEnd="@dimen/marginLarge">
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/medium_height"
-                android:gravity="center_vertical"
-                android:hint="Enter costumer name, phone or email"
-                android:paddingVertical="@dimen/paddingSmall"
-                android:paddingStart="@dimen/paddingNormal"
-                android:paddingEnd="@dimen/paddingNormal"
-                android:textAppearance="@style/textAppearance.Body2"
-                android:textColor="@color/natural_900"
-                app:endIconMode="clear_text" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginNormal"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/marginMedium"
             android:layout_marginStart="@dimen/marginLarge"
             android:layout_marginEnd="@dimen/marginLarge">
 
-            <ProgressBar
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/medium_height"
-                android:layout_centerInParent="true"
-                android:visibility="gone" />
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout.Rounded"
+                android:layout_width="match_parent"
+                app:startIconDrawable="@drawable/asset_ic_search"
+                android:layout_height="@dimen/medium_height">
 
-            <androidx.recyclerview.widget.RecyclerView
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/medium_height"
+                    android:gravity="center_vertical"
+                    android:hint="Enter costumer name, phone or email"
+                    android:paddingVertical="@dimen/paddingSmall"
+                    android:paddingStart="@dimen/paddingNormal"
+                    android:paddingEnd="@dimen/paddingNormal"
+                    android:textAppearance="@style/textAppearance.Body2"
+                    android:textColor="@color/natural_900"
+                    app:endIconMode="clear_text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
-                tools:itemCount="3"
-                tools:listitem="@layout/item_cotumer" />
+                android:layout_marginTop="@dimen/marginNormal">
 
-        </RelativeLayout>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/medium_height"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/item_cotumer" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 

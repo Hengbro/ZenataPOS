@@ -14,14 +14,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/marginNormal">
+            android:paddingStart="@dimen/paddingMedium"
+            android:paddingEnd="@dimen/paddingMedium">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
                 android:layout_width="@dimen/buttonImage"
                 android:layout_height="@dimen/buttonImage"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/marginNormal"
                 android:padding="@dimen/buttonImagePadding"
                 android:src="@drawable/asset_ic_close" />
 
@@ -29,9 +29,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginSmall"
+                android:layout_marginStart="@dimen/marginNormal"
                 android:layout_marginTop="@dimen/marginSmall"
-                android:layout_marginEnd="@dimen/marginSmall"
                 android:layout_marginBottom="@dimen/marginSmall"
                 android:layout_toEndOf="@+id/btn_clear"
                 android:text="Variation recipe"
@@ -40,10 +39,11 @@
 
             <com.google.android.material.button.MaterialButton
                 android:layout_width="@dimen/_45sdp"
-                android:layout_height="@dimen/large_height"
+                android:layout_height="@dimen/medium_height"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:text="Save"
+                android:layout_margin="@dimen/marginSmall"
                 android:textAppearance="@style/textAppearance.Body2.Bold"/>
 
         </RelativeLayout>
@@ -91,6 +91,7 @@
                         android:text="Beef Steak: Small"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/marginNormal"
                         android:textAppearance="@style/textAppearance.Body3"/>
 
                 </RelativeLayout>
@@ -124,7 +125,11 @@
                     <androidx.appcompat.widget.AppCompatImageView
                         android:layout_width="@dimen/buttonImage"
                         android:layout_height="@dimen/buttonImage"
-                        android:padding="@dimen/buttonImagePadding"/>
+                        android:padding="@dimen/buttonImagePadding"
+                        android:src="@drawable/asset_ic_delete"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/marginSmall"/>
 
                 </RelativeLayout>
 
@@ -133,37 +138,64 @@
                     android:layout_height="0.5dp"
                     android:background="@color/gray4" />
 
-                <com.google.android.material.button.MaterialButton
-                    style="@style/Button.Normal"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:gravity="start|center_vertical"
-                    android:padding="@dimen/marginNormal"
-                    android:text="Drink"
-                    android:textAppearance="@style/textAppearance.Body3.Bold"
-                    android:textColor="@color/dark"/>
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Button.Normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/marginNormal"
+                        android:text="Enter ingredient name"
+                        android:textAppearance="@style/textAppearance.Body3.Bold"
+                        android:textColor="@color/blue"/>
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:padding="@dimen/buttonImagePadding"
+                        android:src="@drawable/asset_ic_delete"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/marginSmall"/>
+
+                </RelativeLayout>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="0.5dp"
                     android:background="@color/gray4" />
 
-                <com.google.android.material.button.MaterialButton
-                    style="@style/Button.Normal"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:gravity="start|center_vertical"
-                    android:padding="@dimen/marginNormal"
-                    android:text="Snacks"
-                    android:textAppearance="@style/textAppearance.Body3.Bold"
-                    android:textColor="@color/dark"/>
+                    android:orientation="horizontal">
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="0.5dp"
-                    android:background="@color/gray4" />
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/buttonImage"
+                        android:layout_height="@dimen/buttonImage"
+                        android:padding="@dimen/buttonImagePadding"
+                        android:src="@drawable/baseline_add"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center_vertical"
+                        app:tint="@color/green_400"
+                        android:layout_marginEnd="@dimen/marginSmall"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Button.Normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/marginNormal"
+                        android:text="Enter ingredient name"
+                        android:textAppearance="@style/textAppearance.Body3.Bold"
+                        android:textColor="@color/green_400"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 

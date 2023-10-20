@@ -14,7 +14,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/large_height"
-            android:layout_margin="@dimen/marginNormal">
+            android:paddingStart="@dimen/paddingMedium"
+            android:paddingEnd="@dimen/paddingMedium">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
@@ -117,7 +118,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_alignParentEnd="true"/>
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="@dimen/paddingMedium"/>
 
         </RelativeLayout>
 
@@ -149,7 +151,8 @@
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"/>
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="@dimen/paddingMedium"/>
 
         </RelativeLayout>
 
@@ -181,7 +184,8 @@
             <androidx.appcompat.widget.AppCompatRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"/>
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="@dimen/paddingMedium"/>
 
         </RelativeLayout>
 

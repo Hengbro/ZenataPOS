@@ -14,7 +14,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/large_height"
-            android:layout_margin="@dimen/marginNormal">
+            android:paddingStart="@dimen/paddingMedium"
+            android:paddingEnd="@dimen/paddingMedium">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/btn_clear"
@@ -38,49 +39,15 @@
                 android:textAppearance="@style/textAppearance.Body2.Bold"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/normal_height"
+                android:layout_height="wrap_content"
+                android:text="Split payment"
+                android:textAppearance="@style/textAppearance.Body2"
+                android:textColor="@color/colorPrimary"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/marginSmall"
-                    android:text="Remove"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textColor="@color/red"
-                    android:textStyle="bold"
-                    android:visibility="gone" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/marginSmall"
-                    android:text="Split payment"
-                    android:textAppearance="@style/textAppearance.Body2"
-                    android:textColor="@color/colorPrimary"
-                    android:textStyle="bold" />
-
-                <com.google.android.material.button.MaterialButton
-                    style="@style/Button.Normal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/medium_height"
-                    android:text="Save"
-                    android:textColor="@color/white"
-                    android:visibility="gone" />
-
-            </LinearLayout>
-
-            <com.google.android.material.button.MaterialButton
-                style="@style/Button.Normal"
-                android:layout_width="wrap_content"
-                android:layout_height="@dimen/medium_height"
-                android:layout_alignParentEnd="true"
-                android:text="Save taxes"
-                android:visibility="gone" />
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

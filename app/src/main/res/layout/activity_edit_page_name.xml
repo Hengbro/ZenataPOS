@@ -9,13 +9,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/medium_height"
-        android:layout_marginEnd="@dimen/marginNormal">
+        android:paddingStart="@dimen/paddingMedium"
+        android:paddingEnd="@dimen/paddingMedium">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/medium_height"
-            android:layout_marginStart="@dimen/marginSmall"
-            android:layout_marginEnd="@dimen/marginSmall"
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -23,7 +22,6 @@
                 android:layout_height="@dimen/buttonImage"
                 android:src="@drawable/asset_ic_close"
                 android:padding="@dimen/buttonImagePadding"
-                android:layout_marginStart="@dimen/marginNormal"
                 android:layout_gravity="center_vertical"/>
 
             <TextView
