@@ -9,23 +9,26 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.zenatapos.databinding.ActivityAdaInfoUserBinding
+import com.example.zenatapos.databinding.ActivityCategoriesBinding
 import com.example.zenatapos.databinding.ActivityMainBinding
+import com.example.zenatapos.databinding.FragmentSlideshowBinding
+import com.inyongtisto.myhelper.extension.intentActivity
 
-class InfoUserActivity : AppCompatActivity() {
+class AddCategoryActivity : AppCompatActivity() {
 
-    private var _binding: ActivityAdaInfoUserBinding? = null
+    private var _binding: ActivityCategoriesBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        _binding = ActivityAdaInfoUserBinding.inflate(layoutInflater)
+        _binding = ActivityCategoriesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.apply {
-            /*btnClose!!.setOnClickListener {
-                val intent = Intent(this@InfoUserActivity, HomeChekOutActivity::class.java)
-                startActivity(intent)
-            }*/
+            btnSave.setOnClickListener {
+                intentActivity(FragmentSlideshowBinding::class.java)
+            }
         }
+
     }
 }

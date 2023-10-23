@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ZenataPOS"
         tools:targetApi="31">
+        <activity android:name=".ui.allactivity.CategoriesActivity"/>
+        <activity android:name=".ui.allactivity.InfoUserActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -20,10 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.example.zenatapos.ui.allactivity.InfoUserActivity" />
-        <activity android:name="com.example.zenatapos.ui.allactivity.CategoriesActivity" />
-
     </application>
 
 </manifest>

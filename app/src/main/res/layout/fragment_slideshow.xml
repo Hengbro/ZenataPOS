@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/medium_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:textAppearance="@style/textAppearance.Body2.Bold"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/marginMedium"/>
+
+        <TextView
+            android:id="@+id/btn_addcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add new category"
+            android:textAppearance="@style/textAppearance.Body2.Bold"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/marginMedium"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginStart="@dimen/marginMedium"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray4"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputLayout.Rounded"
+        android:layout_width="match_parent"
+        app:startIconDrawable="@drawable/asset_ic_search"
+        android:layout_height="@dimen/medium_height"
+        android:layout_marginBottom="@dimen/marginExtra"
+        android:layout_margin="@dimen/marginMedium">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_textsearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/medium_height"
+            android:gravity="center_vertical"
+            android:hint="Enter costumer name, phone or email"
+            android:paddingVertical="@dimen/paddingSmall"
+            android:paddingStart="@dimen/paddingNormal"
+            android:paddingEnd="@dimen/paddingNormal"
+            android:textAppearance="@style/textAppearance.Body2"
+            android:textColor="@color/natural_900"
+            app:endIconMode="clear_text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginMedium">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/medium_height"
+            android:visibility="gone"
+            android:layout_centerInParent="true" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_transform"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="GridLayoutManager"
+            app:spanCount="1"
+            tools:context=".ui.transform.TransformFragment" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+

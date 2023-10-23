@@ -20,25 +20,9 @@ class CategoriesActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _binding = ActivityCategoriesBinding.inflate(layoutInflater)
-        viewModel = ViewModelProvider(this)[CategoriesModel::class.java]
-
-        setAdapter()
-        setData()
-    }
-
-    private fun setAdapter(){
-        binding.rvData.adapter = adapterCategory
-    }
-
-    private fun setData(){
-        viewModel.listCategory.observe(this){
-            adapterCategory.addItems(it)
-        }
+        setContentView(binding.root)
 
 
-    }
 
-    private fun getData(item: Categories) {
-        binding.edtTextsearch.setText(item.name)
     }
 }

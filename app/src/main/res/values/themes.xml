@@ -317,4 +317,13 @@
         <item name="strokeColor">@color/gray4</item>
     </style>
 
+    <style name="Theme.ZenataPOS.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ZenataPOS.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ZenataPOS.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>
