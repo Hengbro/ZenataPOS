@@ -1,25 +1,18 @@
-package com.example.zenatapos.ui.reflow
+package com.example.zenatapos.ui.slideshow
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.example.zenatapos.R
 import com.example.zenatapos.databinding.FragmentSlideshowBinding
-import com.example.zenatapos.databinding.FragmentTransformBinding
 import com.example.zenatapos.databinding.ItemTransformBinding
-import com.example.zenatapos.model.Categories
 import com.example.zenatapos.ui.allactivity.AddCategoryActivity
-import com.example.zenatapos.ui.slideshow.SlideshowViewModel
-import com.example.zenatapos.ui.transform.TransformViewModel
 import com.inyongtisto.myhelper.extension.intentActivity
 
 class SlideshowFragment : Fragment() {

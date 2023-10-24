@@ -15,13 +15,14 @@
         <activity android:name=".ui.allactivity.CategoriesActivity"/>
         <activity android:name=".ui.allactivity.InfoUserActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.zenatapos.ui.productInventory.ProductInventoryActivity" />
     </application>
 
 </manifest>
